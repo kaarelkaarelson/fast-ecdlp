@@ -48,9 +48,10 @@ jobs:
         working-directory: .
         run: |
           sudo swapoff -a || true
-          sudo fallocate -l 24G /swapfile && sudo chmod 600 /swapfile
-          sudo mkswap /swapfile && sudo swapon /swapfile
-          free -h
+          dir=/mnt; [ -d /mnt ] && [ "$(df --output=avail -BG /mnt | tail -1 | tr -dc 0-9)" -ge 20 ] || dir=/
+          sudo fallocate -l 12G "$dir/swapfile2" && sudo chmod 600 "$dir/swapfile2"
+          sudo mkswap "$dir/swapfile2" && sudo swapon "$dir/swapfile2"
+          free -h; df -h / /mnt || true
 
       - name: Resolve toolchain and matching lean4export release
         id: pins
