@@ -15,6 +15,10 @@ c91cc3f4947caca8977e81a5d14244f73b5ae2b1), released under the Apache License, Ve
 Lean files are unmodified; lakefile.toml was modified to build only the included files, as stated
 at the top of that file.
 
+The continuous-integration workflow and the script .github/scripts/comparator-check.sh are adapted
+from, respectively copied unmodified from, the Lean development anthropics/formal-math
+(https://github.com/anthropics/formal-math), released under the Apache License, Version 2.0.
+
 This product depends on, but does not include, Lean 4 (https://github.com/leanprover/lean4) and
 mathlib4 with its standard dependency set, fetched by the build tool at the revisions pinned in
 lean/lake-manifest.json. Lean 4, mathlib4, batteries, aesop, Qq, ProofWidgets4, import-graph,
