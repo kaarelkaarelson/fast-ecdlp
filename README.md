@@ -54,13 +54,32 @@ These results have written proofs in the paper. They rely on classical results t
 | `paper.pdf` | The paper. |
 | `lean/Challenge.lean` | The statement to audit (Mathlib only). |
 | `lean/Solution.lean` | The proof of that statement. |
+| `lean/Main.lean` | The main results under readable names; start here. |
 | `lean/Verify.lean` | Axiom check for the main theorem and the paper's Lean table. |
 | `lean/ECDLP/` | All lemmas and proofs. Module names (e.g. `L104_Final`) are the ones cited in the paper's Lean table. |
 | `lean/vendor/rudich-factoring/` | The counting engine as proved by Rudich and Rousseau (Apache 2.0). |
 | `lean/comparator.json`, `lean/formalization.yaml` | Comparator configuration and project metadata. |
 | `scripts/` | Numerical checks for the paper-only results, one folder per topic; [`scripts/README.md`](scripts/README.md) gives each command and its expected output. |
 | `docs/REPRODUCE.md` | Each claim of the paper → how to check it → expected output. |
+| `docs/MODULES.md` | What each group of Lean modules contains. |
 | `docs/CLAIMS.md` | Each claim → how it is established (Lean, paper proof, numerical check, citation). |
+
+## Navigating the Lean code
+
+Start with [`lean/Main.lean`](lean/Main.lean): it restates the main results under readable names. The modules in `lean/ECDLP/` are named after the work packages that produced them, and the paper cites these names. By topic:
+
+| Topic | Modules |
+|---|---|
+| The statement and the final assembly | `L35`, `L61`, `L77`, `L78`, `L80`, `L92`, `L102`, `L104` |
+| Group law as integer constraints | `L30` |
+| Search from counts | `L31` |
+| Multiplication gadgets and networks | `L34`, `L38`, `L44`, `L51`, `L54`, `L56`, `L93` |
+| The counting engine on this network: size, cost, value | `L57`–`L60`, `L63`–`L65`, `L69`–`L72`, `L84`, `L85`, `L87`, `L88`, `L94`, `L96` |
+| Gate expressions and their bounds | `L68`, `L73`–`L76`, `L79`, `L81`–`L83`, `L86`, `L89`–`L91`, `L95` |
+| Coverage, with the classical inputs as hypotheses | `L40`, `L43`, `L46`, `L49` |
+| Audit examples | `L105` |
+
+[`docs/MODULES.md`](docs/MODULES.md) describes every group.
 
 ## How the proof works
 
@@ -91,6 +110,6 @@ Third-party material, listed in [NOTICE](NOTICE):
 | Component | Location | License |
 |---|---|---|
 | Lean development of Rudich and Rousseau (the counting engine) | `lean/vendor/rudich-factoring/`, a subset of the original files, unmodified apart from `lakefile.toml` | Apache 2.0, its own [LICENSE](lean/vendor/rudich-factoring/LICENSE) |
-| Lean 4, Mathlib and its dependencies | not included; downloaded at build time | Apache 2.0 (one dependency, Cli, is MIT) |
+| Lean 4, Mathlib and its dependencies | downloaded at build time | Apache 2.0 (one dependency, Cli, is MIT) |
 
 The paper (`paper.pdf`) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

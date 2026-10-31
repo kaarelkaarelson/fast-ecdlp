@@ -3,9 +3,10 @@
 #   Solution       -- the same declarations, proved (imports ECDLP.L104_Final).
 #   ECDLP/*        -- every lemma and proof; module names are those cited in the paper.
 #   ECDLPArtifact  -- imports Solution and the modules of the paper's Lean table.
+#   Main           -- readable aliases for the main results.
 #   Verify         -- #print axioms for the main theorem and every theorem of the table.
 name = "ECDLP"
-defaultTargets = ["Challenge", "Solution", "ECDLPArtifact", "Verify"]
+defaultTargets = ["Challenge", "Solution", "ECDLPArtifact", "Main", "Verify"]
 
 [[require]]
 name = "mathlib"
@@ -28,6 +29,9 @@ globs = ["ECDLP.+"]
 
 [[lean_lib]]
 name = "ECDLPArtifact"
+
+[[lean_lib]]
+name = "Main"
 
 [[lean_lib]]
 name = "Verify"
