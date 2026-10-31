@@ -43,6 +43,15 @@ jobs:
           sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /opt/hostedtoolcache/CodeQL || true
           df -h /
 
+      # The largest modules need more than the runner's 16 GB of memory.
+      - name: Add swap
+        working-directory: .
+        run: |
+          sudo swapoff -a || true
+          sudo fallocate -l 24G /swapfile && sudo chmod 600 /swapfile
+          sudo mkswap /swapfile && sudo swapon /swapfile
+          free -h
+
       - name: Resolve toolchain and matching lean4export release
         id: pins
         run: |
