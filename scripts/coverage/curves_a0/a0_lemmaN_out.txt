@@ -1,0 +1,10 @@
+p=1033 B=3 n=1029 omega=[195, 837] X=32 sqrt(p/3)=18.6 sqrt p=32.1 omega-pairs in [1,X]: [(16, 21), (21, 16)]
+  pair (16, 21): max #s over nontrivial 4-tuples containing the pair = 9 (D'_4=12); over 600 random 6-tuples = 12 (D'_6=80)
+  pair (21, 16): max #s over nontrivial 4-tuples containing the pair = 9 (D'_4=12); over 600 random 6-tuples = 9 (D'_6=80)
+  full orbit tuple (1, 195, 837, 2, 390, 641): #s=243 (s with all six points existing ~ (p-1)/4 = 258); D'_6=80 -> exceptional, g_t==0
+PASS a0_lemmaN
+p=4003 B=2 n=4111 omega=[822, 3180] X=63 sqrt(p/3)=36.5 sqrt p=63.3 omega-pairs in [1,X]: [(34, 39), (39, 34)]
+  pair (34, 39): max #s over nontrivial 4-tuples containing the pair = 9 (D'_4=12); over 600 random 6-tuples = 9 (D'_6=80)
+  pair (39, 34): max #s over nontrivial 4-tuples containing the pair = 9 (D'_4=12); over 600 random 6-tuples = 9 (D'_6=80)
+  full orbit tuple (1, 822, 3180, 2, 1644, 2357): #s=1089 (s with all six points existing ~ (p-1)/4 = 1000); D'_6=80 -> exceptional, g_t==0
+PASS a0_lemmaN

@@ -1,0 +1,33 @@
+# Lean artifact for "A Fast Algorithm for Elliptic-Curve Discrete Logarithms".
+#   Challenge      -- the statement, for audit (imports Mathlib only).
+#   Solution       -- the same declarations, proved (imports ECDLP.L104_Final).
+#   ECDLP/*        -- every lemma and proof; module names are those cited in the paper.
+#   ECDLPArtifact  -- imports Solution and the modules of the paper's Lean table.
+#   Verify         -- #print axioms for the main theorem and every theorem of the table.
+name = "ECDLP"
+defaultTargets = ["Challenge", "Solution", "ECDLPArtifact", "Verify"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
+
+[[require]]
+name = "SubexponentialDeterministicFactoring"
+path = "vendor/rudich-factoring"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "ECDLP"
+globs = ["ECDLP.+"]
+
+[[lean_lib]]
+name = "ECDLPArtifact"
+
+[[lean_lib]]
+name = "Verify"

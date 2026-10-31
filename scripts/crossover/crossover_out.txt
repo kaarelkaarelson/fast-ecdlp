@@ -1,0 +1,8 @@
+proved c1 = 1410, rho = 1/sqrt2               log2 L >= 5.154e+11  (m = 5, l = 28)  paper 5.15e+11  match
+asymptotic c1 = 744, rho = 1/sqrt2            log2 L >= 1.288e+11  (m = 5, l = 26)  paper 1.29e+11  match
+measured c1 = 182, rho = 1/sqrt2              log2 L >= 8.053e+09  (m = 5, l = 22)  paper 8.05e+09  match
+V7 c1 = 125, rho = 1/sqrt2 (Hypothesis H)     log2 L >= 2.013e+09  (m = 5, l = 21)  paper 2.01e+09  match
+edge network c1 = 549504, rho = 1/sqrt2       log2 L >= 6.755e+16  (m = 5, l = 45)  paper 6.8e+16  match
+main-text pieces rho = 11/12, c1 = 1410       log2 L >= 6.231e+35  (m = 5, l = 108)  paper 6.2e+35  match
+c1 = 1, rho = 1/sqrt2                         log2 L >= 2.431e+05  (m = 5, l = 7)  paper 2.4e+05  match
+PASS crossover

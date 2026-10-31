@@ -1,0 +1,34 @@
+INSTANCES FOUND:
+  cyc_sqfree: p=4493 A=1109 B=3843 N=4465={5: 1, 19: 1, 47: 1} exp=4465 (G ~ Z/4465 x Z/1)
+  cyc_pp: p=2711 A=1660 B=1361 N=2688={2: 7, 3: 1, 7: 1} exp=2688 (G ~ Z/2688 x Z/1)
+  noncyc_pp: p=1423 A=1172 B=1353 N=1368={2: 3, 3: 2, 19: 1} exp=228 (G ~ Z/228 x Z/6)
+  prime: p=3907 A=1890 B=401 N=3863={3863: 1} exp=3863 (G ~ Z/3863 x Z/1)
+  noncyc_sqfreeexp: p=2393 A=1527 B=559 N=2444={2: 2, 13: 1, 47: 1} exp=1222 (G ~ Z/1222 x Z/2)
+[cyc_sqfree] p=4493 N=4465 G=Z/4465xZ/1 ord(P)=4465(gen) d=2915 -> d''=2915 mod ord: 2915 OK  restarts=1 samples=193 acc=76 cover(G)~0.37 cover(H=<P>) at one u=0.31 |H|=4465
+[cyc_sqfree] p=4493 N=4465 G=Z/4465xZ/1 ord(P)=4465(gen) d=3518 -> d''=3518 mod ord: 3518 OK  restarts=1 samples=189 acc=72 cover(G)~0.33 cover(H=<P>) at one u=0.38 |H|=4465
+[cyc_sqfree] p=4493 N=4465 G=Z/4465xZ/1 ord(P)=5(small) d=1 -> d''=3786 mod ord: 1 OK  restarts=1 samples=232 acc=70 cover(G)~0.31 cover(H=<P>) at one u=0.40 |H|=5
+[cyc_sqfree] p=4493 N=4465 G=Z/4465xZ/1 ord(P)=5(small) d=4 -> d''=759 mod ord: 4 OK  restarts=1 samples=235 acc=76 cover(G)~0.36 cover(H=<P>) at one u=0.40 |H|=5
+[cyc_sqfree] p=4493 N=4465 G=Z/4465xZ/1 ord(P)=4465(any) d=2521 -> d''=2521 mod ord: 2521 OK  restarts=1 samples=213 acc=88 cover(G)~0.45 cover(H=<P>) at one u=0.35 |H|=4465
+[cyc_sqfree] p=4493 N=4465 G=Z/4465xZ/1 ord(P)=4465(any) d=2787 -> d''=2787 mod ord: 2787 OK  restarts=1 samples=191 acc=78 cover(G)~0.38 cover(H=<P>) at one u=0.35 |H|=4465
+[cyc_pp] p=2711 N=2688 G=Z/2688xZ/1 ord(P)=2688(gen) d=1774 -> d''=1774 mod ord: 1774 OK  restarts=1 samples=158 acc=60 cover(G)~0.35 cover(H=<P>) at one u=0.31 |H|=2688
+[cyc_pp] p=2711 N=2688 G=Z/2688xZ/1 ord(P)=2688(gen) d=93 -> d''=93 mod ord: 93 OK  restarts=1 samples=175 acc=60 cover(G)~0.35 cover(H=<P>) at one u=0.28 |H|=2688
+[cyc_pp] p=2711 N=2688 G=Z/2688xZ/1 ord(P)=84(any) d=53 -> d''=725 mod ord: 53 OK  restarts=1 samples=136 acc=78 cover(G)~0.56 cover(H=<P>) at one u=0.43 |H|=84
+[cyc_pp] p=2711 N=2688 G=Z/2688xZ/1 ord(P)=84(any) d=49 -> d''=301 mod ord: 49 OK  restarts=1 samples=175 acc=60 cover(G)~0.35 cover(H=<P>) at one u=0.26 |H|=84
+[noncyc_pp] p=1423 N=1368 G=Z/228xZ/6 ord(P)=228(gen) d=110 -> d''=110 mod ord: 110 OK  restarts=1 samples=125 acc=54 cover(G)~0.47 cover(H=<P>) at one u=0.32 |H|=228
+[noncyc_pp] p=1423 N=1368 G=Z/228xZ/6 ord(P)=228(gen) d=132 -> d''=1044 mod ord: 132 OK  restarts=1 samples=127 acc=53 cover(G)~0.45 cover(H=<P>) at one u=0.24 |H|=228
+[noncyc_pp] p=1423 N=1368 G=Z/228xZ/6 ord(P)=6(small) d=5 -> d''=71 mod ord: 5 OK  restarts=1 samples=160 acc=40 cover(G)~0.25 cover(H=<P>) at one u=0.00 |H|=6
+[noncyc_pp] p=1423 N=1368 G=Z/228xZ/6 ord(P)=6(small) d=4 -> d''=76 mod ord: 4 OK  restarts=1 samples=129 acc=50 cover(G)~0.42 cover(H=<P>) at one u=0.00 |H|=6
+[noncyc_pp] p=1423 N=1368 G=Z/228xZ/6 ord(P)=228(any) d=11 -> d''=11 mod ord: 11 OK  restarts=1 samples=107 acc=44 cover(G)~0.32 cover(H=<P>) at one u=0.25 |H|=228
+[noncyc_pp] p=1423 N=1368 G=Z/228xZ/6 ord(P)=228(any) d=3 -> d''=3 mod ord: 3 OK  restarts=1 samples=126 acc=56 cover(G)~0.48 cover(H=<P>) at one u=0.55 |H|=228
+[prime] p=3907 N=3863 G=Z/3863xZ/1 ord(P)=3863(gen) d=1727 -> d''=1727 mod ord: 1727 OK  restarts=1 samples=177 acc=80 cover(G)~0.43 cover(H=<P>) at one u=0.51 |H|=3863
+[prime] p=3907 N=3863 G=Z/3863xZ/1 ord(P)=3863(gen) d=2097 -> d''=2097 mod ord: 2097 OK  restarts=1 samples=163 acc=82 cover(G)~0.46 cover(H=<P>) at one u=0.30 |H|=3863
+[prime] p=3907 N=3863 G=Z/3863xZ/1 ord(P)=3863(any) d=2196 -> d''=2196 mod ord: 2196 OK  restarts=1 samples=240 acc=66 cover(G)~0.31 cover(H=<P>) at one u=0.53 |H|=3863
+[prime] p=3907 N=3863 G=Z/3863xZ/1 ord(P)=3863(any) d=1289 -> d''=1289 mod ord: 1289 OK  restarts=1 samples=174 acc=92 cover(G)~0.55 cover(H=<P>) at one u=0.35 |H|=3863
+[noncyc_sqfreeexp] p=2393 N=2444 G=Z/1222xZ/2 ord(P)=1222(gen) d=1015 -> d''=2237 mod ord: 1015 OK  restarts=1 samples=161 acc=60 cover(G)~0.36 cover(H=<P>) at one u=0.43 |H|=1222
+[noncyc_sqfreeexp] p=2393 N=2444 G=Z/1222xZ/2 ord(P)=1222(gen) d=391 -> d''=391 mod ord: 391 OK  restarts=1 samples=161 acc=68 cover(G)~0.45 cover(H=<P>) at one u=0.39 |H|=1222
+[noncyc_sqfreeexp] p=2393 N=2444 G=Z/1222xZ/2 ord(P)=2(small) d=0 -> d''=2298 mod ord: 0 OK  restarts=1 samples=146 acc=68 cover(G)~0.46 cover(H=<P>) at one u=0.00 |H|=2
+[noncyc_sqfreeexp] p=2393 N=2444 G=Z/1222xZ/2 ord(P)=2(small) d=1 -> d''=1643 mod ord: 1 OK  restarts=1 samples=141 acc=64 cover(G)~0.42 cover(H=<P>) at one u=0.00 |H|=2
+[noncyc_sqfreeexp] p=2393 N=2444 G=Z/1222xZ/2 ord(P)=611(any) d=93 -> d''=1315 mod ord: 93 OK  restarts=1 samples=171 acc=60 cover(G)~0.36 cover(H=<P>) at one u=0.25 |H|=611
+[noncyc_sqfreeexp] p=2393 N=2444 G=Z/1222xZ/2 ord(P)=611(any) d=582 -> d''=2415 mod ord: 582 OK  restarts=1 samples=147 acc=66 cover(G)~0.44 cover(H=<P>) at one u=0.40 |H|=611
+SUMMARY: 26/26 instances recovered d correctly
+PASS toy_ic

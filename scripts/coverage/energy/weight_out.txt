@@ -1,0 +1,5 @@
+n=3 weight w_n=8 homogeneity OK; deg_z=2 (expected 2)
+n=4 weight w_n=24 homogeneity OK; deg_z=4 (expected 4)
+n=5 weight w_n=64 homogeneity OK; deg_z=8 (expected 8)
+n=6 weight w_n=160 homogeneity OK; deg_z=16 (expected 16)
+PASS semaev_weight

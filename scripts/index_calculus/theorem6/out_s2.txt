@@ -1,0 +1,1 @@
+PASS s2_test (z - sigma(Ay) exactly uniform on null space, 40 random A, full enumeration)

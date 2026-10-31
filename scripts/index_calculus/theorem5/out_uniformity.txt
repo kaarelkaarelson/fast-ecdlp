@@ -1,0 +1,33 @@
+curve p=47 N=48={2: 4, 3: 1} fibre size N^3=110592; all fibres equal size: True
+f=9, rows=23
+  l^v=16: s=14 rank(Lam mod l)=14 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=4096; mu_1 chi2=4049 df=4095 z=-0.50; joint(mu1,mu2 mod l) bins=64 chi2=58 z=-0.42
+     negative control (biased: a_1 = 0 mod l): chi2=44227 (df 4095, z=+443.5)
+  l^v=3: s=14 rank(Lam mod l)=14 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=27; mu_1 chi2=48 df=26 z=+2.99; joint(mu1,mu2 mod l) bins=729 chi2=751 z=+0.61
+     negative control (biased: a_1 = 0 mod l): chi2=80027 (df 26, z=+11094.1)
+UNIFORMITY_EXPERIMENT consistent with Lemma 2
+curve p=47 N=44={2: 2, 11: 1} fibre size N^3=85184; all fibres equal size: True
+f=11, rows=25
+  l^v=4: s=14 rank(Lam mod l)=14 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=64; mu_1 chi2=68 df=63 z=+0.44; joint(mu1,mu2 mod l) bins=16 chi2=16 z=+0.16
+     negative control (biased: a_1 = 0 mod l): chi2=47 (df 63, z=-1.4)
+  l^v=11: s=14 rank(Lam mod l)=14 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=1331; mu_1 chi2=1379 df=1330 z=+0.95; joint(mu1,mu2 mod l) bins=1771561 chi2=1772218 z=+0.35
+UNIFORMITY_EXPERIMENT consistent with Lemma 2
+curve p=59 N=48={2: 4, 3: 1} fibre size N^3=110592; all fibres equal size: True
+f=9, rows=23
+  l^v=16: s=14 rank(Lam mod l)=14 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=4096; mu_1 chi2=4127 df=4095 z=+0.36; joint(mu1,mu2 mod l) bins=64 chi2=57 z=-0.52
+     negative control (biased: a_1 = 0 mod l): chi2=44060 (df 4095, z=+441.6)
+  l^v=3: s=14 rank(Lam mod l)=14 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=27; mu_1 chi2=22 df=26 z=-0.58; joint(mu1,mu2 mod l) bins=729 chi2=727 z=-0.02
+     negative control (biased: a_1 = 0 mod l): chi2=80018 (df 26, z=+11092.9)
+UNIFORMITY_EXPERIMENT consistent with Lemma 2
+curve p=47 N=48={2: 4, 3: 1} fibre size N^3=110592; all fibres equal size: True
+f=11, rows=25
+  l^v=16: s=15 rank(Lam mod l)=15 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=4096; mu_1 chi2=4032 df=4095 z=-0.70; joint(mu1,mu2 mod l) bins=64 chi2=78 z=+1.32
+     negative control (biased: a_1 = 0 mod l): chi2=44001 (df 4095, z=+441.0)
+  l^v=3: s=15 rank(Lam mod l)=15 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=27; mu_1 chi2=23 df=26 z=-0.48; joint(mu1,mu2 mod l) bins=729 chi2=680 z=-1.26
+     negative control (biased: a_1 = 0 mod l): chi2=80029 (df 26, z=+11094.5)
+UNIFORMITY_EXPERIMENT consistent with Lemma 2
+curve p=43 N=52={2: 2, 13: 1} fibre size N^3=140608; all fibres equal size: True
+f=12, rows=26
+  l^v=4: s=14 rank(Lam mod l)=14 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=64; mu_1 chi2=71 df=63 z=+0.76; joint(mu1,mu2 mod l) bins=16 chi2=15 z=-0.03
+     negative control (biased: a_1 = 0 mod l): chi2=40086 (df 63, z=+3565.5)
+  l^v=13: s=14 rank(Lam mod l)=14 (onto iff =s: True); mu in K_l (200 draws): True; |K_l|=2197; mu_1 chi2=2109 df=2196 z=-1.31; joint(mu1,mu2 mod l) bins=4826809 chi2=4824458 z=-0.76
+UNIFORMITY_EXPERIMENT consistent with Lemma 2

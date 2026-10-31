@@ -1,0 +1,3 @@
+Lemma 3 literal (first 12 non-pivot Lambda rows): 297/297 (instance, prime) pairs generate K_l; non-generating: []
+  of which l=2: 76/76
+nice -n 19 python3 lemma3.py 31 120  6.86s user 0.04s system 99% cpu 6.901 total

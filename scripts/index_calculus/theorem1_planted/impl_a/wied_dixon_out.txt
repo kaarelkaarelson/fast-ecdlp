@@ -1,0 +1,5 @@
+f=100 l=40013 v=2: verified=True; matvecs=402 = 4.02 f; time 0.0s
+f=200 l=160019 v=2: verified=True; matvecs=802 = 4.01 f; time 0.1s
+f=400 l=640019 v=2: verified=True; matvecs=1602 = 4.00 f; time 0.3s
+f=800 l=2560021 v=2: verified=True; matvecs=3202 = 4.00 f; time 1.3s
+PASS wied_dixon

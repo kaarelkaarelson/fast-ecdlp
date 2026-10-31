@@ -1,0 +1,12 @@
+# SMALL-l regime (l<=L0): M uniform in [0,l); outside Lemma P2 regime
+# cyc l=17 N=289 f=6 m=20 policy=first cover=1.000 avgdec=183.84 L0=17
+RESULT cyc l=17 policy=first f=6 m=20: rounds=200 ok=167 singular_B=33 (rate 0.165, bound f/M0=0.353) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=36.0
+# SMALL-l regime (l<=L0): M uniform in [0,l); outside Lemma P2 regime
+# rank2 l=17 N=289 f=6 m=20 policy=first cover=1.000 avgdec=183.84 L0=17
+RESULT rank2 l=17 policy=first f=6 m=20: rounds=200 ok=163 singular_B=37 (rate 0.185, bound f/M0=0.353) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=36.0
+# SMALL-l regime (l<=L0): M uniform in [0,l); outside Lemma P2 regime
+# cyc l=17 N=289 f=6 m=20 policy=adv cover=1.000 avgdec=183.84 L0=17
+RESULT cyc l=17 policy=adv f=6 m=20: rounds=200 ok=156 singular_B=44 (rate 0.220, bound f/M0=0.353) howell_fail=0 wrong=0 | vanilla torsion>0 in 200/200 hist={1: 200} | oracle calls/round=36.0
+# SMALL-l regime (l<=L0): M uniform in [0,l); outside Lemma P2 regime
+# rank2 l=17 N=289 f=6 m=20 policy=adv cover=1.000 avgdec=183.84 L0=17
+RESULT rank2 l=17 policy=adv f=6 m=20: rounds=200 ok=168 singular_B=32 (rate 0.160, bound f/M0=0.353) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=36.0

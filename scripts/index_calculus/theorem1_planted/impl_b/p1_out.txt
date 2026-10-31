@@ -1,0 +1,6 @@
+cover 0.8821563822677656
+M=0: accept rate 0.8821  chi2 vs uniform-on-Dec z=-2.38  mean c_1 (hunter oracle, i=0) 9.250
+M=1: accept rate 0.8828  chi2 vs uniform-on-Dec z=+2.08  mean c_1 (hunter oracle, i=0) 9.318
+M=17: accept rate 0.8800  chi2 vs uniform-on-Dec z=+0.61  mean c_1 (hunter oracle, i=0) 9.382
+M=63: accept rate 0.8819  chi2 vs uniform-on-Dec z=+1.99  mean c_1 (hunter oracle, i=0) 9.285
+M=1000003: accept rate 0.8831  chi2 vs uniform-on-Dec z=-0.08  mean c_1 (hunter oracle, i=0) 9.314

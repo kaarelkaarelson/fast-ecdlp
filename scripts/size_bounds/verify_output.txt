@@ -1,0 +1,20 @@
+hand-proof inequalities S1-S11 checked for every integer L in [16, 2^20]: ok
+  .. 50 12 s
+  .. 100 18 s
+  .. 150 20 s
+  .. 450 32 s
+  .. 700 39 s
+  .. 4096 76 s
+  .. 65536 839 s
+L values: 290 (min 16, max 65536, powers of two 13, odd 180); instances (L,m,p): 1460; m in (2, 3, 5, 8, 16)
+  max U/mL               907.477
+  max UB/mL              1094.182
+  max W/mL               1380.674
+  max WB/mL              1662.636
+  max wmax/L^.75         136.500
+  max wB/L^.75           136.500
+  max gP_actual_max      846.933
+  max bound(gP) worst    1385.795
+constants: C1=1410 (U<=C1 m L), CW=2140 (U+H<=CW m L), C2=2250 (gP<=C2 m L for g<=1 L^(1/4)), L0=16
+closed forms exact (U,H,node count), upper bounds >= exact, weights/cluster bounds hold  [839s]
+PASS

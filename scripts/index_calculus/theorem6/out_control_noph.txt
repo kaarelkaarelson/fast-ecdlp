@@ -1,0 +1,50 @@
+sqfree p=1297 N=1283={1283: 1} exp=1283 ordP=1283(random) d=1025 got=1025 rounds=1 OK
+sqfree p=1297 N=1283={1283: 1} exp=1283 ordP=1283(maxord) d=1165 got=1165 rounds=1 OK
+sqfree p=653 N=658={2: 1, 7: 1, 47: 1} exp=658 ordP=47(random) d=0 got=0 rounds=1 OK
+sqfree p=653 N=658={2: 1, 7: 1, 47: 1} exp=658 ordP=658(maxord) d=638 got=638 rounds=1 OK
+sqfree p=653 N=633={3: 1, 211: 1} exp=633 ordP=211(random) d=138 got=138 rounds=1 OK
+sqfree p=653 N=633={3: 1, 211: 1} exp=633 ordP=633(maxord) d=93 got=93 rounds=1 OK
+sqfree p=1181 N=1203={3: 1, 401: 1} exp=1203 ordP=1203(random) d=45 got=45 rounds=1 OK
+sqfree p=1181 N=1203={3: 1, 401: 1} exp=1203 ordP=1203(maxord) d=316 got=316 rounds=1 OK
+sqfree p=809 N=813={3: 1, 271: 1} exp=813 ordP=271(random) d=113 got=113 rounds=1 OK
+sqfree p=809 N=813={3: 1, 271: 1} exp=813 ordP=813(maxord) d=579 got=579 rounds=1 OK
+sqfree p=1129 N=1090={2: 1, 5: 1, 109: 1} exp=1090 ordP=1090(random) d=237 got=237 rounds=1 OK
+sqfree p=1129 N=1090={2: 1, 5: 1, 109: 1} exp=1090 ordP=1090(maxord) d=758 got=758 rounds=1 OK
+sqfree p=1571 N=1501={19: 1, 79: 1} exp=1501 ordP=1501(random) d=949 got=949 rounds=1 OK
+sqfree p=1571 N=1501={19: 1, 79: 1} exp=1501 ordP=1501(maxord) d=967 got=967 rounds=1 OK
+sqfree p=971 N=942={2: 1, 3: 1, 157: 1} exp=942 ordP=314(random) d=146 got=146 rounds=1 OK
+sqfree p=971 N=942={2: 1, 3: 1, 157: 1} exp=942 ordP=942(maxord) d=183 got=183 rounds=1 OK
+sq_cyclic p=617 N=572={2: 2, 11: 1, 13: 1} exp=572 ordP=143(random) d=6 got=6 rounds=1 OK
+sq_cyclic p=617 N=572={2: 2, 11: 1, 13: 1} exp=572 ordP=572(maxord) d=371 got=None rounds=None FAIL
+sq_cyclic p=773 N=738={2: 1, 3: 2, 41: 1} exp=738 ordP=246(random) d=59 got=59 rounds=33 OK
+sq_cyclic p=773 N=738={2: 1, 3: 2, 41: 1} exp=738 ordP=738(maxord) d=517 got=None rounds=None FAIL
+sq_cyclic p=619 N=578={2: 1, 17: 2} exp=578 ordP=289(random) d=149 got=None rounds=None FAIL
+sq_cyclic p=619 N=578={2: 1, 17: 2} exp=578 ordP=578(maxord) d=8 got=8 rounds=1 OK
+sq_cyclic p=1163 N=1216={2: 6, 19: 1} exp=1216 ordP=608(random) d=295 got=None rounds=None FAIL
+sq_cyclic p=1163 N=1216={2: 6, 19: 1} exp=1216 ordP=1216(maxord) d=515 got=None rounds=None FAIL
+sq_cyclic p=1093 N=1078={2: 1, 7: 2, 11: 1} exp=1078 ordP=1078(random) d=55 got=55 rounds=1 OK
+sq_cyclic p=1093 N=1078={2: 1, 7: 2, 11: 1} exp=1078 ordP=1078(maxord) d=28 got=28 rounds=1 OK
+sq_cyclic p=1483 N=1467={3: 2, 163: 1} exp=1467 ordP=163(random) d=30 got=30 rounds=1 OK
+sq_cyclic p=1483 N=1467={3: 2, 163: 1} exp=1467 ordP=1467(maxord) d=207 got=207 rounds=1 OK
+sq_cyclic p=883 N=852={2: 2, 3: 1, 71: 1} exp=852 ordP=284(random) d=174 got=174 rounds=2 OK
+sq_cyclic p=883 N=852={2: 2, 3: 1, 71: 1} exp=852 ordP=852(maxord) d=760 got=None rounds=None FAIL
+sq_cyclic p=811 N=776={2: 3, 97: 1} exp=776 ordP=388(random) d=257 got=None rounds=None FAIL
+sq_cyclic p=811 N=776={2: 3, 97: 1} exp=776 ordP=776(maxord) d=437 got=None rounds=None FAIL
+sq_noncyc p=1051 N=1092={2: 2, 3: 1, 7: 1, 13: 1} exp=546 ordP=78(random) d=19 got=19 rounds=1 OK
+sq_noncyc p=1051 N=1092={2: 2, 3: 1, 7: 1, 13: 1} exp=546 ordP=546(maxord) d=275 got=275 rounds=1 OK
+sq_noncyc p=953 N=900={2: 2, 3: 2, 5: 2} exp=450 ordP=75(random) d=22 got=22 rounds=1 OK
+sq_noncyc p=953 N=900={2: 2, 3: 2, 5: 2} exp=450 ordP=450(maxord) d=243 got=None rounds=None FAIL
+sq_noncyc p=1049 N=1024={2: 10} exp=512 ordP=2(random) d=1 got=1 rounds=1 OK
+sq_noncyc p=1049 N=1024={2: 10} exp=512 ordP=512(maxord) d=98 got=None rounds=None FAIL
+sq_noncyc p=739 N=748={2: 2, 11: 1, 17: 1} exp=374 ordP=374(random) d=257 got=257 rounds=1 OK
+sq_noncyc p=739 N=748={2: 2, 11: 1, 17: 1} exp=374 ordP=374(maxord) d=211 got=211 rounds=1 OK
+sq_noncyc p=1399 N=1456={2: 4, 7: 1, 13: 1} exp=728 ordP=91(random) d=71 got=71 rounds=1 OK
+sq_noncyc p=1399 N=1456={2: 4, 7: 1, 13: 1} exp=728 ordP=728(maxord) d=289 got=None rounds=None FAIL
+sq_noncyc p=1277 N=1296={2: 4, 3: 4} exp=648 ordP=324(random) d=48 got=None rounds=None FAIL
+sq_noncyc p=1277 N=1296={2: 4, 3: 4} exp=648 ordP=648(maxord) d=606 got=None rounds=None FAIL
+sq_noncyc p=647 N=636={2: 2, 3: 1, 53: 1} exp=318 ordP=318(random) d=68 got=68 rounds=1 OK
+sq_noncyc p=647 N=636={2: 2, 3: 1, 53: 1} exp=318 ordP=318(maxord) d=86 got=86 rounds=1 OK
+sq_noncyc p=1423 N=1448={2: 3, 181: 1} exp=724 ordP=181(random) d=121 got=121 rounds=1 OK
+sq_noncyc p=1423 N=1448={2: 3, 181: 1} exp=724 ordP=724(maxord) d=172 got=172 rounds=1 OK
+RESULT mode=uniform ph=False 35/48
+FAIL toy66

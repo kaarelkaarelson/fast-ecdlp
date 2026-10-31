@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper."
+title: "A Fast Algorithm for Elliptic-Curve Discrete Logarithms"
+authors:
+  - family-names: Kaarelson
+    given-names: Kaarel
+license: Apache-2.0
+repository-code: "https://github.com/kaarelkaarelson/fast-ecdlp"
+date-released: 2026-10-31
+keywords:
+  - elliptic curve discrete logarithm
+  - index calculus
+  - summation polynomials
+  - Exponential Time Hypothesis
+  - Lean 4
+preferred-citation:
+  type: article
+  title: "A Fast Algorithm for Elliptic-Curve Discrete Logarithms"
+  authors:
+    - family-names: Kaarelson
+      given-names: Kaarel
+  year: 2026
+  notes: "IACR Cryptology ePrint Archive, identifier to appear"

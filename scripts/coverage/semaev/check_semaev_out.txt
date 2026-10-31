@@ -1,0 +1,11 @@
+p=11 n=3 tests=3000 with_relation=286
+p=13 n=3 tests=3000 with_relation=221
+p=11 n=4 tests=3000 with_relation=592
+p=13 n=4 tests=3000 with_relation=538
+p=17 n=4 tests=2000 with_relation=331
+p=11 n=5 tests=600 with_relation=91
+p=13 n=5 tests=600 with_relation=84
+p=11 n=6 tests=150 with_relation=29
+p=13 n=6 tests=150 with_relation=44
+total 15500 relations 2216 mismatches 0
+PASS semaev_iff

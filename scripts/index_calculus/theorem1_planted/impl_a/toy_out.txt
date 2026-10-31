@@ -1,0 +1,8 @@
+p=5107 N=5041={71: 2} l=71 f=26 m=4 cover=0.99 M0=52: PLANT ok 37/40 singular 3 wrong 0; VANILLA delta_l (rankQ-rank_l) hist [0] rankQ range 24-26
+p=5303 N=5329={73: 2} l=73 f=26 m=4 cover=0.98 M0=52: PLANT ok 38/40 singular 2 wrong 0; VANILLA delta_l (rankQ-rank_l) hist [0] rankQ range 24-26
+p=5303 N=5329={73: 2} l=73 f=26 m=4 cover=0.99 M0=52: PLANT ok 39/40 singular 1 wrong 0; VANILLA delta_l (rankQ-rank_l) hist [0] rankQ range 25-26
+p=5309 N=5329={73: 2} l=73 f=26 m=4 cover=0.99 M0=52: PLANT ok 39/40 singular 1 wrong 0; VANILLA delta_l (rankQ-rank_l) hist [0] rankQ range 24-26
+p=5483 N=5618={2: 1, 53: 2} l=53 f=26 m=4 cover=0.98 M0=52: PLANT ok 40/40 singular 0 wrong 0; VANILLA delta_l (rankQ-rank_l) hist [0] rankQ range 25-26
+p=5021 N=5043={3: 1, 41: 2} l=41 f=26 m=4 cover=0.99 M0=41: PLANT ok 38/40 singular 2 wrong 0; VANILLA delta_l (rankQ-rank_l) hist [0] rankQ range 25-26
+TOTAL planted: ok 231, singular-B 9, wrong 0 of 240
+PASS toy_l97

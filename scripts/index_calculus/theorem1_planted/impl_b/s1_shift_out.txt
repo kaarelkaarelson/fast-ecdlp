@@ -1,0 +1,12 @@
+seed=11 cover 0.8888888888888888
+seed=11 |K_l| 729
+seed=11 rounds used 150000, B singular mod 3 rejected 227077/377077; marginal mu_1 over K_l (729 cells, mean 206): chi2=767.3 df=728 z=+1.03
+seed=11 joint (mu_1,mu_2) mod (l) coords (81 cells): chi2=106.7 df=80 z=+2.11
+seed=12 cover 0.8888888888888888
+seed=12 |K_l| 729
+seed=12 rounds used 150000, B singular mod 3 rejected 228017/378017; marginal mu_1 over K_l (729 cells, mean 206): chi2=711.7 df=728 z=-0.43
+seed=12 joint (mu_1,mu_2) mod (l) coords (81 cells): chi2=93.5 df=80 z=+1.06
+seed=13 cover 0.8888888888888888
+seed=13 |K_l| 729
+seed=13 rounds used 150000, B singular mod 3 rejected 227937/377937; marginal mu_1 over K_l (729 cells, mean 206): chi2=687.7 df=728 z=-1.06
+seed=13 joint (mu_1,mu_2) mod (l) coords (81 cells): chi2=78.1 df=80 z=-0.15

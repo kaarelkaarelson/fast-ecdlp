@@ -1,0 +1,36 @@
+# cyc l=67 N=4489 f=4 m=30 policy=first cover=0.853 avgdec=1.43 L0=64
+RESULT cyc l=67 policy=first f=4 m=30: rounds=200 ok=197 singular_B=3 (rate 0.015, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=37.4
+# cyc l=67 N=4489 f=4 m=80 policy=first cover=1.000 avgdec=20.47 L0=64
+RESULT cyc l=67 policy=first f=4 m=80: rounds=200 ok=194 singular_B=6 (rate 0.030, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=32.0
+# rank2 l=67 N=4489 f=4 m=30 policy=first cover=0.838 avgdec=1.45 L0=64
+RESULT rank2 l=67 policy=first f=4 m=30: rounds=200 ok=190 singular_B=10 (rate 0.050, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=38.0
+# rank2 l=67 N=4489 f=4 m=80 policy=first cover=1.000 avgdec=20.47 L0=64
+RESULT rank2 l=67 policy=first f=4 m=80: rounds=200 ok=195 singular_B=5 (rate 0.025, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=32.0
+# l3 l=67 N=300763 f=4 m=30 policy=first cover=0.018 avgdec=1.00 L0=64
+RESULT l3 l=67 policy=first f=4 m=30: rounds=200 ok=197 singular_B=3 (rate 0.015, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=1763.7
+# l3 l=67 N=300763 f=4 m=80 policy=first cover=0.293 avgdec=1.04 L0=64
+RESULT l3 l=67 policy=first f=4 m=80: rounds=200 ok=192 singular_B=8 (rate 0.040, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=108.2
+# cyc l=67 N=4489 f=4 m=30 policy=adv cover=0.777 avgdec=1.56 L0=64
+RESULT cyc l=67 policy=adv f=4 m=30: rounds=200 ok=194 singular_B=6 (rate 0.030, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=41.6
+# cyc l=67 N=4489 f=4 m=80 policy=adv cover=1.000 avgdec=20.47 L0=64
+RESULT cyc l=67 policy=adv f=4 m=80: rounds=200 ok=189 singular_B=11 (rate 0.055, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=32.0
+# rank2 l=67 N=4489 f=4 m=30 policy=adv cover=0.823 avgdec=1.48 L0=64
+RESULT rank2 l=67 policy=adv f=4 m=30: rounds=200 ok=194 singular_B=6 (rate 0.030, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=38.8
+# rank2 l=67 N=4489 f=4 m=80 policy=adv cover=1.000 avgdec=20.47 L0=64
+RESULT rank2 l=67 policy=adv f=4 m=80: rounds=200 ok=190 singular_B=10 (rate 0.050, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=32.0
+# l3 l=67 N=300763 f=4 m=30 policy=adv cover=0.018 avgdec=1.00 L0=64
+RESULT l3 l=67 policy=adv f=4 m=30: rounds=200 ok=192 singular_B=8 (rate 0.040, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=1711.9
+# l3 l=67 N=300763 f=4 m=80 policy=adv cover=0.173 avgdec=1.76 L0=64
+RESULT l3 l=67 policy=adv f=4 m=80: rounds=200 ok=198 singular_B=2 (rate 0.010, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=183.5
+# cyc l=67 N=4489 f=4 m=30 policy=hunter cover=0.871 avgdec=1.40 L0=64
+RESULT cyc l=67 policy=hunter f=4 m=30: rounds=200 ok=196 singular_B=4 (rate 0.020, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=36.6
+# cyc l=67 N=4489 f=4 m=80 policy=hunter cover=1.000 avgdec=20.47 L0=64
+RESULT cyc l=67 policy=hunter f=4 m=80: rounds=200 ok=191 singular_B=9 (rate 0.045, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=32.0
+# rank2 l=67 N=4489 f=4 m=30 policy=hunter cover=0.772 avgdec=1.57 L0=64
+RESULT rank2 l=67 policy=hunter f=4 m=30: rounds=200 ok=191 singular_B=9 (rate 0.045, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=41.7
+# rank2 l=67 N=4489 f=4 m=80 policy=hunter cover=1.000 avgdec=20.47 L0=64
+RESULT rank2 l=67 policy=hunter f=4 m=80: rounds=200 ok=192 singular_B=8 (rate 0.040, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=32.0
+# l3 l=67 N=300763 f=4 m=30 policy=hunter cover=0.018 avgdec=1.03 L0=64
+RESULT l3 l=67 policy=hunter f=4 m=30: rounds=200 ok=194 singular_B=6 (rate 0.030, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=1795.7
+# l3 l=67 N=300763 f=4 m=80 policy=hunter cover=0.203 avgdec=1.51 L0=64
+RESULT l3 l=67 policy=hunter f=4 m=80: rounds=200 ok=192 singular_B=8 (rate 0.040, bound f/M0=0.062) howell_fail=0 wrong=0 | vanilla torsion>0 in 0/200 hist={0: 200} | oracle calls/round=160.8

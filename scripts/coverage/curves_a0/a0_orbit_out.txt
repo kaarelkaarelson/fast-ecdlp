@@ -1,0 +1,2 @@
+p=2011 squares tested=1005, (E_2,f,cov_3) differ between w and omega*w in 0 cases
+PASS a0_orbit

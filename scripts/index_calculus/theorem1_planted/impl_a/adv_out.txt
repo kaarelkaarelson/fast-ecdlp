@@ -1,0 +1,8 @@
+p=5021 N=5043={3: 1, 41: 2} l=41 f=80 m=4 cover=1.000 fraction of sums with a chi-orthogonal tuple=1.0000
+VANILLA: delta_l = rank_Q - rank_l over 20 rounds: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+PLANTED: ok 19/20, B singular mod l 1, wrong 0
+PASS run_adv
+p=5021 N=5043={3: 1, 41: 2} l=41 f=100 m=4 cover=1.000 fraction of sums with a chi-orthogonal tuple=1.0000
+VANILLA: delta_l = rank_Q - rank_l over 20 rounds: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+PLANTED: ok 19/20, B singular mod l 1, wrong 0
+PASS run_adv

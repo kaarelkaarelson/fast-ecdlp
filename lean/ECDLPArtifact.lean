@@ -1,0 +1,34 @@
+-- The main theorem (Solution), the audit statement's definitions, the audit examples, and the modules
+-- that define every theorem named in the paper's Lean table (printed by Verify.lean).
+import Solution
+import ECDLP.L35_Challenge
+import ECDLP.L105_Examples
+import ECDLP.L30_Step
+import ECDLP.L30_Chain
+import ECDLP.L30_Final
+import ECDLP.L30_Int
+import ECDLP.L31_Search
+import ECDLP.L34_Main
+import ECDLP.L34_Final
+import ECDLP.L35_Forced
+import ECDLP.L56_PForced
+import ECDLP.L38_Main
+import ECDLP.L38_Compose
+import ECDLP.L44_Sys
+import ECDLP.L56_EdgeCount
+import ECDLP.L56_EFinal
+import ECDLP.L93_Count
+import ECDLP.L92_Count
+import ECDLP.L57_Cluster
+import ECDLP.L57_Concrete
+import ECDLP.L94_Final
+import ECDLP.L40_Cover
+import ECDLP.L46_IndexCalc
+import ECDLP.L46_Final
+import ECDLP.L49_Transport
+import ECDLP.L49_Final
+import ECDLP.L96_F
+import ECDLP.L104_Engine
+import ECDLP.L77_Final
+import ECDLP.L102_Final
+import ECDLP.L104_Final

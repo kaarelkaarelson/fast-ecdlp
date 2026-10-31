@@ -1,0 +1,214 @@
+== gadget correctness: gate-level accept <=> integer identity ==
+  exhaustive p=7 gadget sq0     vars=2 assignments=64 identity-true=4 mismatches=0
+  exhaustive p=7 gadget curve0  vars=4 assignments=65536 identity-true=107 mismatches=0
+  exhaustive p=7 gadget sq1     vars=2 assignments=64 identity-true=4 mismatches=0
+  exhaustive p=7 gadget curve1  vars=4 assignments=65536 identity-true=107 mismatches=0
+  exhaustive p=7 gadget inv1    vars=4 assignments=16384 identity-true=27 mismatches=0
+  exhaustive p=7 gadget xsum1   vars=4 assignments=16384 identity-true=31 mismatches=0
+  exhaustive p=7 gadget ysum1   vars=4 assignments=65536 identity-true=140 mismatches=0
+  exhaustive p=13 gadget sq0     vars=2 assignments=64 identity-true=4 mismatches=0
+  exhaustive p=13 gadget curve0  vars=4 assignments=65536 identity-true=86 mismatches=0
+  exhaustive p=13 gadget sq1     vars=2 assignments=64 identity-true=4 mismatches=0
+  exhaustive p=13 gadget curve1  vars=4 assignments=65536 identity-true=86 mismatches=0
+  exhaustive p=13 gadget inv1    vars=4 assignments=16384 identity-true=15 mismatches=0
+  exhaustive p=13 gadget xsum1   vars=4 assignments=16384 identity-true=9 mismatches=0
+  exhaustive p=13 gadget ysum1   vars=4 assignments=65536 identity-true=76 mismatches=0
+  random L= 16 m=2 (d=5 D=4 M=20): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L= 16 m=3 (d=5 D=4 M=20): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L= 16 m=4 (d=5 D=4 M=20): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L= 64 m=2 (d=9 D=8 M=32): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L= 64 m=3 (d=9 D=8 M=32): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L= 64 m=4 (d=9 D=8 M=32): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L=160 m=2 (d=11 D=16 M=32): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L=160 m=3 (d=11 D=16 M=32): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L=160 m=4 (d=11 D=16 M=32): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L=256 m=2 (d=17 D=16 M=48): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L=256 m=3 (d=17 D=16 M=48): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L=256 m=4 (d=17 D=16 M=48): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L=512 m=2 (d=33 D=16 M=80): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L=512 m=3 (d=33 D=16 M=80): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+  random L=512 m=4 (d=33 D=16 M=80): true decomposition accepted=1, perturbed rejected=50 wrongly-accepted=0
+== PART 1: exact counts (ordered tuples (P_1..P_m) in F^m, generic additions) ==
+F = {affine P on y^2=x^3+ax+b : 0<=x<B}, B=ceil(p^(1/m)); prefix = leading bits of x_1||..||x_m, each x_i on ell=bitlen(B-1) bits.
+Counted: ordered tuples with P_1+..+P_m=R where every partial addition S_{k-1}+P_k has x(S_{k-1})!=x(P_k) (no doubling, no P_i=-P_j step).
+inst  1 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(11, 27) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=36 accepted=0 OK
+inst  2 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(11, 27) kind=zero  prefix='10'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=36 accepted=0 OK
+inst  3 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(18, 8) kind=many  prefix=''             Z=4 brute=4 (full incl. degenerate=4) violators rejected=50 accepted=0 OK
+inst  4 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(18, 8) kind=many  prefix='011'          Z=1 brute=1 (full incl. degenerate=1) violators rejected=50 accepted=0 OK
+inst  5 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(18, 8) kind=many  prefix='011110'       Z=1 brute=1 (full incl. degenerate=1) violators rejected=50 accepted=0 OK
+inst  6 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(18, 8) kind=many  prefix='10'           Z=1 brute=1 (full incl. degenerate=1) violators rejected=50 accepted=0 OK
+inst  7 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(27, 24) kind=many  prefix=''             Z=2 brute=2 (full incl. degenerate=2) violators rejected=46 accepted=0 OK
+inst  8 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(27, 24) kind=many  prefix='100'          Z=1 brute=1 (full incl. degenerate=1) violators rejected=46 accepted=0 OK
+inst  9 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(27, 24) kind=many  prefix='100011'       Z=1 brute=1 (full incl. degenerate=1) violators rejected=46 accepted=0 OK
+inst 10 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(27, 24) kind=many  prefix='11'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=46 accepted=0 OK
+inst 11 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(3, 36) kind=degen prefix=''             Z=0 brute=0 (full incl. degenerate=1) violators rejected=36 accepted=0 OK
+inst 12 p=37     a=2 b=5 m=2 B=7 |F|=6 R=(3, 36) kind=degen prefix='11'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=36 accepted=0 OK
+inst 13 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(44, 33) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=64 accepted=0 OK
+inst 14 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(44, 33) kind=zero  prefix='01'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=64 accepted=0 OK
+inst 15 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(31, 55) kind=many  prefix=''             Z=2 brute=2 (full incl. degenerate=2) violators rejected=74 accepted=0 OK
+inst 16 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(31, 55) kind=many  prefix='0010'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 17 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(31, 55) kind=many  prefix='00100011'     Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 18 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(31, 55) kind=many  prefix='01'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=74 accepted=0 OK
+inst 19 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(9, 37) kind=many  prefix=''             Z=2 brute=2 (full incl. degenerate=2) violators rejected=74 accepted=0 OK
+inst 20 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(9, 37) kind=many  prefix='0111'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 21 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(9, 37) kind=many  prefix='01110011'     Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 22 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(9, 37) kind=many  prefix='01'           Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 23 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(60, 42) kind=degen prefix=''             Z=0 brute=0 (full incl. degenerate=1) violators rejected=64 accepted=0 OK
+inst 24 p=101    a=3 b=7 m=2 B=11 |F|=8 R=(60, 42) kind=degen prefix='10'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=64 accepted=0 OK
+inst 25 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(250, 209) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=256 accepted=0 OK
+inst 26 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(250, 209) kind=zero  prefix='01'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=256 accepted=0 OK
+inst 27 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(228, 143) kind=many  prefix=''             Z=6 brute=6 (full incl. degenerate=6) violators rejected=268 accepted=0 OK
+inst 28 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(228, 143) kind=many  prefix='1010'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=268 accepted=0 OK
+inst 29 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(228, 143) kind=many  prefix='10100111'     Z=1 brute=1 (full incl. degenerate=1) violators rejected=268 accepted=0 OK
+inst 30 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(228, 143) kind=many  prefix='00'           Z=1 brute=1 (full incl. degenerate=1) violators rejected=268 accepted=0 OK
+inst 31 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(75, 167) kind=many  prefix=''             Z=2 brute=2 (full incl. degenerate=2) violators rejected=266 accepted=0 OK
+inst 32 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(75, 167) kind=many  prefix='1010'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=266 accepted=0 OK
+inst 33 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(75, 167) kind=many  prefix='10100011'     Z=1 brute=1 (full incl. degenerate=1) violators rejected=266 accepted=0 OK
+inst 34 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(75, 167) kind=many  prefix='01'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=266 accepted=0 OK
+inst 35 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(93, 2) kind=degen prefix=''             Z=0 brute=0 (full incl. degenerate=1) violators rejected=256 accepted=0 OK
+inst 36 p=251    a=1 b=9 m=2 B=16 |F|=16 R=(93, 2) kind=degen prefix='00'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=256 accepted=0 OK
+inst 37 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(649, 236) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 38 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(649, 236) kind=zero  prefix='001'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 39 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(271, 857) kind=many  prefix=''             Z=8 brute=8 (full incl. degenerate=8) violators rejected=316 accepted=0 OK
+inst 40 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(271, 857) kind=many  prefix='10101'        Z=1 brute=1 (full incl. degenerate=1) violators rejected=316 accepted=0 OK
+inst 41 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(271, 857) kind=many  prefix='1010111100'   Z=1 brute=1 (full incl. degenerate=1) violators rejected=317 accepted=0 OK
+inst 42 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(271, 857) kind=many  prefix='000'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=317 accepted=0 OK
+inst 43 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(185, 525) kind=many  prefix=''             Z=2 brute=2 (full incl. degenerate=2) violators rejected=311 accepted=0 OK
+inst 44 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(185, 525) kind=many  prefix='10001'        Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 45 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(185, 525) kind=many  prefix='1000100010'   Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 46 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(185, 525) kind=many  prefix='101'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=311 accepted=0 OK
+inst 47 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(29, 72) kind=degen prefix=''             Z=0 brute=0 (full incl. degenerate=1) violators rejected=300 accepted=0 OK
+inst 48 p=1019   a=5 b=11 m=2 B=32 |F|=36 R=(29, 72) kind=degen prefix='110'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 49 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(1122, 1735) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 50 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(1122, 1735) kind=zero  prefix='0001'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 51 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(358, 3656) kind=many  prefix=''             Z=10 brute=10 (full incl. degenerate=10) violators rejected=318 accepted=0 OK
+inst 52 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(358, 3656) kind=many  prefix='110010'       Z=1 brute=1 (full incl. degenerate=1) violators rejected=317 accepted=0 OK
+inst 53 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(358, 3656) kind=many  prefix='110010100001' Z=1 brute=1 (full incl. degenerate=1) violators rejected=318 accepted=0 OK
+inst 54 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(358, 3656) kind=many  prefix='1001'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=317 accepted=0 OK
+inst 55 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(1187, 3887) kind=many  prefix=''             Z=2 brute=2 (full incl. degenerate=2) violators rejected=312 accepted=0 OK
+inst 56 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(1187, 3887) kind=many  prefix='110000'       Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 57 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(1187, 3887) kind=many  prefix='110000001000' Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 58 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(1187, 3887) kind=many  prefix='0001'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=312 accepted=0 OK
+inst 59 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(2163, 431) kind=degen prefix=''             Z=0 brute=0 (full incl. degenerate=1) violators rejected=300 accepted=0 OK
+inst 60 p=4093   a=7 b=3 m=2 B=64 |F|=66 R=(2163, 431) kind=degen prefix='1000'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 61 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(1019, 9245) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 62 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(1019, 9245) kind=zero  prefix='0011'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 63 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(10778, 9281) kind=many  prefix=''             Z=8 brute=8 (full incl. degenerate=8) violators rejected=317 accepted=0 OK
+inst 64 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(10778, 9281) kind=many  prefix='0011000'      Z=2 brute=2 (full incl. degenerate=2) violators rejected=318 accepted=0 OK
+inst 65 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(10778, 9281) kind=many  prefix='00110000111001' Z=1 brute=1 (full incl. degenerate=1) violators rejected=318 accepted=0 OK
+inst 66 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(10778, 9281) kind=many  prefix='1100'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=318 accepted=0 OK
+inst 67 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(915, 13028) kind=many  prefix=''             Z=2 brute=2 (full incl. degenerate=2) violators rejected=312 accepted=0 OK
+inst 68 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(915, 13028) kind=many  prefix='0011000'      Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 69 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(915, 13028) kind=many  prefix='00110000101001' Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 70 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(915, 13028) kind=many  prefix='1100'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=311 accepted=0 OK
+inst 71 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(101, 122) kind=degen prefix=''             Z=4 brute=4 (full incl. degenerate=5) violators rejected=318 accepted=0 OK
+inst 72 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(101, 122) kind=degen prefix='1000001'      Z=1 brute=1 (full incl. degenerate=1) violators rejected=318 accepted=0 OK
+inst 73 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(101, 122) kind=degen prefix='10000011111000' Z=1 brute=1 (full incl. degenerate=1) violators rejected=318 accepted=0 OK
+inst 74 p=16381  a=2 b=3 m=2 B=128 |F|=128 R=(101, 122) kind=degen prefix='0101'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=318 accepted=0 OK
+inst 75 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(23, 27) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=64 accepted=0 OK
+inst 76 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(23, 27) kind=zero  prefix='111'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=64 accepted=0 OK
+inst 77 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(3, 12) kind=many  prefix=''             Z=4 brute=4 (full incl. degenerate=9) violators rejected=78 accepted=0 OK
+inst 78 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(3, 12) kind=many  prefix='0110'         Z=2 brute=2 (full incl. degenerate=5) violators rejected=78 accepted=0 OK
+inst 79 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(3, 12) kind=many  prefix='011010010'    Z=2 brute=2 (full incl. degenerate=2) violators rejected=78 accepted=0 OK
+inst 80 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(3, 12) kind=many  prefix='100'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=78 accepted=0 OK
+inst 81 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(61, 74) kind=many  prefix=''             Z=2 brute=2 (full incl. degenerate=3) violators rejected=74 accepted=0 OK
+inst 82 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(61, 74) kind=many  prefix='0110'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 83 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(61, 74) kind=many  prefix='011010010'    Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 84 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(61, 74) kind=many  prefix='011'          Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 85 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(79, 10) kind=degen prefix=''             Z=2 brute=2 (full incl. degenerate=3) violators rejected=74 accepted=0 OK
+inst 86 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(79, 10) kind=degen prefix='0100'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 87 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(79, 10) kind=degen prefix='010011011'    Z=1 brute=1 (full incl. degenerate=1) violators rejected=74 accepted=0 OK
+inst 88 p=101    a=3 b=7 m=3 B=5 |F|=4 R=(79, 10) kind=degen prefix='100'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=74 accepted=0 OK
+inst 89 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(236, 64) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 90 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(236, 64) kind=zero  prefix='101'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 91 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(2, 45) kind=many  prefix=''             Z=12 brute=12 (full incl. degenerate=21) violators rejected=310 accepted=0 OK
+inst 92 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(2, 45) kind=many  prefix='0101'         Z=4 brute=4 (full incl. degenerate=4) violators rejected=311 accepted=0 OK
+inst 93 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(2, 45) kind=many  prefix='010110110'    Z=2 brute=2 (full incl. degenerate=2) violators rejected=309 accepted=0 OK
+inst 94 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(2, 45) kind=many  prefix='101'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=312 accepted=0 OK
+inst 95 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(229, 178) kind=many  prefix=''             Z=2 brute=2 (full incl. degenerate=3) violators rejected=310 accepted=0 OK
+inst 96 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(229, 178) kind=many  prefix='0100'         Z=1 brute=1 (full incl. degenerate=2) violators rejected=312 accepted=0 OK
+inst 97 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(229, 178) kind=many  prefix='010000010'    Z=1 brute=1 (full incl. degenerate=1) violators rejected=311 accepted=0 OK
+inst 98 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(229, 178) kind=many  prefix='110'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=311 accepted=0 OK
+inst 99 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(187, 30) kind=degen prefix=''             Z=2 brute=2 (full incl. degenerate=3) violators rejected=312 accepted=0 OK
+inst 100 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(187, 30) kind=degen prefix='1001'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 101 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(187, 30) kind=degen prefix='100110110'    Z=1 brute=1 (full incl. degenerate=1) violators rejected=310 accepted=0 OK
+inst 102 p=251    a=4 b=1 m=3 B=7 |F|=8 R=(187, 30) kind=degen prefix='011'          Z=0 brute=0 (full incl. degenerate=0) violators rejected=310 accepted=0 OK
+inst 103 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(430, 323) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 104 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(430, 323) kind=zero  prefix='1010'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 105 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(4, 46) kind=many  prefix=''             Z=12 brute=12 (full incl. degenerate=21) violators rejected=310 accepted=0 OK
+inst 106 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(4, 46) kind=many  prefix='010001'       Z=4 brute=4 (full incl. degenerate=7) violators rejected=310 accepted=0 OK
+inst 107 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(4, 46) kind=many  prefix='010001100110' Z=2 brute=2 (full incl. degenerate=2) violators rejected=311 accepted=0 OK
+inst 108 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(4, 46) kind=many  prefix='0010'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=312 accepted=0 OK
+inst 109 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(591, 714) kind=many  prefix=''             Z=4 brute=4 (full incl. degenerate=6) violators rejected=317 accepted=0 OK
+inst 110 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(591, 714) kind=many  prefix='011001'       Z=1 brute=1 (full incl. degenerate=2) violators rejected=316 accepted=0 OK
+inst 111 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(591, 714) kind=many  prefix='011001000110' Z=1 brute=1 (full incl. degenerate=1) violators rejected=315 accepted=0 OK
+inst 112 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(591, 714) kind=many  prefix='1010'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=314 accepted=0 OK
+inst 113 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(750, 907) kind=degen prefix=''             Z=2 brute=2 (full incl. degenerate=3) violators rejected=312 accepted=0 OK
+inst 114 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(750, 907) kind=degen prefix='000101'       Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 115 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(750, 907) kind=degen prefix='000101100110' Z=1 brute=1 (full incl. degenerate=1) violators rejected=311 accepted=0 OK
+inst 116 p=1019   a=2 b=6 m=3 B=11 |F|=8 R=(750, 907) kind=degen prefix='0001'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=311 accepted=0 OK
+inst 117 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1874, 245) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 118 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1874, 245) kind=zero  prefix='0110'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 119 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(3, 643) kind=many  prefix=''             Z=16 brute=16 (full incl. degenerate=27) violators rejected=313 accepted=0 OK
+inst 120 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(3, 643) kind=many  prefix='001111'       Z=2 brute=2 (full incl. degenerate=2) violators rejected=317 accepted=0 OK
+inst 121 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(3, 643) kind=many  prefix='001111001100' Z=2 brute=2 (full incl. degenerate=2) violators rejected=311 accepted=0 OK
+inst 122 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(3, 643) kind=many  prefix='1011'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=315 accepted=0 OK
+inst 123 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1910, 1079) kind=many  prefix=''             Z=6 brute=6 (full incl. degenerate=6) violators rejected=317 accepted=0 OK
+inst 124 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1910, 1079) kind=many  prefix='101001'       Z=1 brute=1 (full incl. degenerate=1) violators rejected=316 accepted=0 OK
+inst 125 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1910, 1079) kind=many  prefix='101001101100' Z=1 brute=1 (full incl. degenerate=1) violators rejected=317 accepted=0 OK
+inst 126 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1910, 1079) kind=many  prefix='1101'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=316 accepted=0 OK
+inst 127 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1404, 1426) kind=degen prefix=''             Z=2 brute=2 (full incl. degenerate=3) violators rejected=311 accepted=0 OK
+inst 128 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1404, 1426) kind=degen prefix='101001'       Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 129 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1404, 1426) kind=degen prefix='101001101010' Z=1 brute=1 (full incl. degenerate=1) violators rejected=310 accepted=0 OK
+inst 130 p=4093   a=9 b=2 m=3 B=16 |F|=10 R=(1404, 1426) kind=degen prefix='0110'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=310 accepted=0 OK
+inst 131 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(10942, 2538) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 132 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(10942, 2538) kind=zero  prefix='11110'        Z=0 brute=0 (full incl. degenerate=0) violators rejected=300 accepted=0 OK
+inst 133 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(22, 2299) kind=many  prefix=''             Z=62 brute=62 (full incl. degenerate=93) violators rejected=318 accepted=0 OK
+inst 134 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(22, 2299) kind=many  prefix='0111010'      Z=2 brute=2 (full incl. degenerate=2) violators rejected=317 accepted=0 OK
+inst 135 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(22, 2299) kind=many  prefix='011101011001110' Z=2 brute=2 (full incl. degenerate=2) violators rejected=318 accepted=0 OK
+inst 136 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(22, 2299) kind=many  prefix='10110'        Z=30 brute=30 (full incl. degenerate=33) violators rejected=317 accepted=0 OK
+inst 137 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(11874, 14764) kind=many  prefix=''             Z=6 brute=6 (full incl. degenerate=6) violators rejected=318 accepted=0 OK
+inst 138 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(11874, 14764) kind=many  prefix='0010001'      Z=2 brute=2 (full incl. degenerate=2) violators rejected=318 accepted=0 OK
+inst 139 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(11874, 14764) kind=many  prefix='001000111001111' Z=1 brute=1 (full incl. degenerate=1) violators rejected=318 accepted=0 OK
+inst 140 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(11874, 14764) kind=many  prefix='01000'        Z=0 brute=0 (full incl. degenerate=0) violators rejected=318 accepted=0 OK
+inst 141 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(3161, 5265) kind=degen prefix=''             Z=2 brute=2 (full incl. degenerate=3) violators rejected=312 accepted=0 OK
+inst 142 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(3161, 5265) kind=degen prefix='0100100'      Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 143 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(3161, 5265) kind=degen prefix='010010000000000' Z=1 brute=1 (full incl. degenerate=1) violators rejected=312 accepted=0 OK
+inst 144 p=16381  a=3 b=5 m=3 B=26 |F|=30 R=(3161, 5265) kind=degen prefix='11001'        Z=0 brute=0 (full incl. degenerate=0) violators rejected=312 accepted=0 OK
+inst 145 p=37     a=2 b=5 m=4 B=3 |F|=0 R=(10, 10) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=0 accepted=0 OK
+inst 146 p=37     a=2 b=5 m=4 B=3 |F|=0 R=(10, 10) kind=zero  prefix='11'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=0 accepted=0 OK
+inst 147 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(12, 219) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=256 accepted=0 OK
+inst 148 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(12, 219) kind=zero  prefix='01'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=256 accepted=0 OK
+inst 149 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(231, 188) kind=many  prefix=''             Z=12 brute=12 (full incl. degenerate=24) violators rejected=262 accepted=0 OK
+inst 150 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(231, 188) kind=many  prefix='0010'         Z=6 brute=6 (full incl. degenerate=6) violators rejected=262 accepted=0 OK
+inst 151 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(231, 188) kind=many  prefix='00101010'     Z=3 brute=3 (full incl. degenerate=3) violators rejected=262 accepted=0 OK
+inst 152 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(231, 188) kind=many  prefix='10'           Z=6 brute=6 (full incl. degenerate=12) violators rejected=262 accepted=0 OK
+inst 153 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(4, 9) kind=many  prefix=''             Z=4 brute=4 (full incl. degenerate=16) violators rejected=270 accepted=0 OK
+inst 154 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(4, 9) kind=many  prefix='1000'         Z=2 brute=2 (full incl. degenerate=4) violators rejected=270 accepted=0 OK
+inst 155 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(4, 9) kind=many  prefix='10000010'     Z=2 brute=2 (full incl. degenerate=2) violators rejected=270 accepted=0 OK
+inst 156 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(4, 9) kind=many  prefix='11'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=270 accepted=0 OK
+inst 157 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(225, 49) kind=degen prefix=''             Z=2 brute=2 (full incl. degenerate=4) violators rejected=266 accepted=0 OK
+inst 158 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(225, 49) kind=degen prefix='0010'         Z=1 brute=1 (full incl. degenerate=1) violators rejected=266 accepted=0 OK
+inst 159 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(225, 49) kind=degen prefix='00100000'     Z=1 brute=1 (full incl. degenerate=1) violators rejected=266 accepted=0 OK
+inst 160 p=251    a=4 b=1 m=4 B=4 |F|=4 R=(225, 49) kind=degen prefix='01'           Z=0 brute=0 (full incl. degenerate=0) violators rejected=266 accepted=0 OK
+inst 161 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(456, 697) kind=zero  prefix=''             Z=0 brute=0 (full incl. degenerate=0) violators rejected=256 accepted=0 OK
+inst 162 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(456, 697) kind=zero  prefix='1000'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=256 accepted=0 OK
+inst 163 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(993, 384) kind=many  prefix=''             Z=12 brute=12 (full incl. degenerate=24) violators rejected=262 accepted=0 OK
+inst 164 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(993, 384) kind=many  prefix='100001'       Z=6 brute=6 (full incl. degenerate=6) violators rejected=262 accepted=0 OK
+inst 165 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(993, 384) kind=many  prefix='100001001001' Z=3 brute=3 (full incl. degenerate=3) violators rejected=262 accepted=0 OK
+inst 166 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(993, 384) kind=many  prefix='1011'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=262 accepted=0 OK
+inst 167 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(27, 704) kind=many  prefix=''             Z=4 brute=4 (full incl. degenerate=16) violators rejected=270 accepted=0 OK
+inst 168 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(27, 704) kind=many  prefix='001100'       Z=2 brute=2 (full incl. degenerate=4) violators rejected=270 accepted=0 OK
+inst 169 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(27, 704) kind=many  prefix='001100001100' Z=2 brute=2 (full incl. degenerate=2) violators rejected=270 accepted=0 OK
+inst 170 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(27, 704) kind=many  prefix='0010'         Z=0 brute=0 (full incl. degenerate=6) violators rejected=270 accepted=0 OK
+inst 171 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(301, 750) kind=degen prefix=''             Z=0 brute=0 (full incl. degenerate=1) violators rejected=256 accepted=0 OK
+inst 172 p=1019   a=2 b=6 m=4 B=6 |F|=4 R=(301, 750) kind=degen prefix='1101'         Z=0 brute=0 (full incl. degenerate=0) violators rejected=256 accepted=0 OK
+instances=172  sum Z=366  excluded (degenerate) tuples among prefix-matching ones=158  total violators rejected=41680
+== PART 2: Definition 2 (Psi_{a,b} = sum_theta f(za,theta) f(zb,theta), f indicator of message; sum_b c_ab <= P) ==
+  L= 10 m=2: gates=184 edges=414  Psi pairs tested=68280 (matching=37406) factorization mismatches=0  P=max(bits,shared)=408, all sum_b c_ab<=P: True
+  L= 10 m=3: gates=333 edges=774  Psi pairs tested=75480 (matching=41055) factorization mismatches=0  P=max(bits,shared)=442, all sum_b c_ab<=P: True
+  L= 12 m=2: gates=174 edges=380  Psi pairs tested=67600 (matching=36716) factorization mismatches=0  P=max(bits,shared)=357, all sum_b c_ab<=P: True
+  L= 61 m=2: gates=288 edges=930  Psi pairs tested=78600 (matching=41999) factorization mismatches=0  P=max(bits,shared)=700, all sum_b c_ab<=P: True
+  L=127 m=3: gates=518 edges=1656  Psi pairs tested=93120 (matching=49402) factorization mismatches=0  P=max(bits,shared)=1323, all sum_b c_ab<=P: True
+SUMMARY clean-par exact parts: gadgets=True part1(instances=172)=True part2=True [142s]
+EXACT-PART PASS

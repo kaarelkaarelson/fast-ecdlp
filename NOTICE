@@ -1,0 +1,22 @@
+fast-ecdlp: a Lean 4 formalization and supporting code for "A Fast Algorithm for
+Elliptic-Curve Discrete Logarithms"
+Copyright 2026 Kaarel Kaarelson
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The paper, paper.pdf, is licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/).
+
+This product includes, in lean/vendor/rudich-factoring/, a part of the Lean 4 development
+"Subexponential Deterministic Factoring" by Isaac Rudich and Louis-Martin Rousseau
+(https://github.com/IsaacRudich/SubexponentialDeterministicFactoring, commit
+c91cc3f4947caca8977e81a5d14244f73b5ae2b1), released under the Apache License, Version 2.0
+(lean/vendor/rudich-factoring/LICENSE). Only the files needed by this product are included. The
+Lean files are unmodified; lakefile.toml was modified to build only the included files, as stated
+at the top of that file.
+
+This product depends on, but does not include, Lean 4 (https://github.com/leanprover/lean4) and
+mathlib4 with its standard dependency set, fetched by the build tool at the revisions pinned in
+lean/lake-manifest.json. Lean 4, mathlib4, batteries, aesop, Qq, ProofWidgets4, import-graph,
+LeanSearchClient and plausible are released under the Apache License, Version 2.0; Cli
+(leanprover/lean4-cli) is released under the MIT License.

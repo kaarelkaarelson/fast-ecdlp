@@ -1,0 +1,22 @@
+# Deterministic factoring in time N^{o(1)}.  Imports Mathlib only.
+#
+#   FactoringAux/*     -- every lemma and proof.
+#
+# Modified for redistribution in the ECDLP artifact: only the FactoringAux files imported by the
+# ECDLP development are included, so the libraries Challenge, Solution and Factoring_aux and the
+# default targets of the original lakefile were removed (their files are not included). The
+# original declared, in addition:
+#   defaultTargets = ["Challenge", "Solution"]
+#   [[lean_lib]] name = "Challenge"
+#   [[lean_lib]] name = "Solution"
+#   [[lean_lib]] name = "Factoring_aux"
+name = "SubexponentialDeterministicFactoring"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "FactoringAux"
+globs = ["FactoringAux.+"]

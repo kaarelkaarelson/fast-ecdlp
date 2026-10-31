@@ -1,0 +1,12 @@
+p=30013 A=5 B=7 n=29922 cyclic
+ m=2 X=173 #dil=15006: mean f=172.5  mean E_m=118790.2  (E/X^m mean=3.97, max=7.80, X^2m/p=29845.24)  cov mean=0.393 min=0.202 frac(cov>0.1)=1.000
+    w=1 box: f=172 E=115700.0 cov=0.393; maxnontriv|S|: w=1 57.3, over dilates mean 53.3 max 75.7; sqrtX=13.2 sqrt p=173.2 3sqrt(p)(ln p+1)=5878
+ m=3 X=31 #dil=15006: mean f=30.9  mean E_m=486093.5  (E/X^m mean=16.32, max=91.87, X^2m/p=29570.64)  cov mean=0.163 min=0.003 frac(cov>0.1)=0.755
+    w=1 box: f=32 E=486440.0 cov=0.167; maxnontriv|S|: w=1 20.4, over dilates mean 21.3 max 34.0; sqrtX=5.6 sqrt p=173.2 3sqrt(p)(ln p+1)=5878
+ m=3 X=90 #dil=15006: mean f=89.7  mean E_m=31213746.4  (E/X^m mean=42.82, max=244.99, X^2m/p=17707026.95)  cov mean=0.970 min=0.576 frac(cov>0.1)=1.000
+    w=1 box: f=98 E=43601072.0 cov=0.995; maxnontriv|S|: w=1 39.9, over dilates mean 38.1 max 55.8; sqrtX=9.5 sqrt p=173.2 3sqrt(p)(ln p+1)=5878
+p=10009 A=0 B=5 n=10029 cyclic
+ m=2 X=100 #dil=5004: mean f=100.6  mean E_m=40554.5  (E/X^m mean=4.06, max=8.66, X^2m/p=9991.01)  cov mean=0.399 min=0.193 frac(cov>0.1)=1.000
+    w=1 box: f=118 E=59338.0 cov=0.507; maxnontriv|S|: w=1 43.4, over dilates mean 37.9 max 52.1; sqrtX=10.0 sqrt p=100.0 3sqrt(p)(ln p+1)=3065
+ m=3 X=22 #dil=5004: mean f=22.2  mean E_m=183925.0  (E/X^m mean=17.27, max=80.62, X^2m/p=11327.80)  cov mean=0.183 min=0.010 frac(cov>0.1)=0.748
+    w=1 box: f=30 E=478260.0 cov=0.335; maxnontriv|S|: w=1 21.4, over dilates mean 16.7 max 25.4; sqrtX=4.7 sqrt p=100.0 3sqrt(p)(ln p+1)=3065

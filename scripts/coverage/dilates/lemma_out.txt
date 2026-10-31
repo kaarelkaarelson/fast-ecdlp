@@ -1,0 +1,8 @@
+p=1013 A=1 B=5 X=12 nontrivial multisets tested=1287; max #s with relation = 4 at t=(1, 3, 8, 9); D'=12; hist={0: 824, 1: 366, 2: 85, 3: 10, 4: 2}
+PASS lemma_degree
+p=2003 A=7 B=11 X=12 nontrivial multisets tested=1287; max #s with relation = 6 at t=(1, 3, 8, 12); D'=12; hist={0: 788, 1: 389, 2: 94, 3: 13, 4: 2, 6: 1}
+PASS lemma_degree
+p=1009 A=5 B=1 X=12 nontrivial multisets tested=1287; max #s with relation = 4 at t=(1, 3, 10, 12); D'=12; hist={0: 741, 1: 413, 2: 119, 3: 11, 4: 3}
+PASS lemma_degree
+p=1009 A=2 B=3 X=12 nontrivial multisets tested=1287; max #s with relation = 4 at t=(1, 1, 3, 12); D'=12; hist={0: 723, 1: 418, 2: 123, 3: 18, 4: 5}
+PASS lemma_degree

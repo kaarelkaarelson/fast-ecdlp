@@ -1,0 +1,5 @@
+f=100 l=40343 v=3: solution exact mod l^v: True; matvecs=903 = 9.03 f ; per level 3.01 f ; 0.0s
+f=200 l=160159 v=3: solution exact mod l^v: True; matvecs=1803 = 9.02 f ; per level 3.01 f ; 0.2s
+f=400 l=640529 v=3: solution exact mod l^v: True; matvecs=3603 = 9.01 f ; per level 3.00 f ; 0.7s
+f=800 l=2560123 v=3: solution exact mod l^v: True; matvecs=7203 = 9.00 f ; per level 3.00 f ; 2.8s
+PASS wied

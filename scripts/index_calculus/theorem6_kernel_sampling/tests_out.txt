@@ -1,0 +1,4 @@
+T1 zsigma exactly uniform on left kernel for 30 random (E,l): True
+T2 Schur recursion: 300 random (E,l,v): all Lambda*E==0, full rank mod l, same count as dense elimination: True
+   sample (l,v,n,f,s_schur,s_dense,defect_level0): [(3, 3, 6, 3, 3, 3, 1), (2, 4, 5, 4, 3, 3, 3), (2, 3, 5, 2, 4, 4, 1), (2, 3, 13, 2, 13, 13, 2)]
+PASS tests

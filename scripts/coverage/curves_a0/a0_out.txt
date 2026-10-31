@@ -1,0 +1,78 @@
+p=2011 A=0 B=7 n=2041 cyclic  omega=[205, 1805] sqrt(p/3)=25.9 sqrt(p)=44.8
+  X=12: omega-pairs in [1,X]: 0; mean f=12.2; mean (f-X)^2/X=0.99 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.19 max=10.29  cover mean=0.039 min=0.004
+     m=3: E_m/X^m mean=17.80 max=108.70  cover mean=0.169 min=0.008
+  X=20: omega-pairs in [1,X]: 0; mean f=20.4; mean (f-X)^2/X=0.90 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.30 max=10.97  cover mean=0.101 min=0.014
+     m=3: E_m/X^m mean=22.63 max=200.22  cover mean=0.507 min=0.035
+  X=25: omega-pairs in [1,X]: 0; mean f=25.3; mean (f-X)^2/X=0.94 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.37 max=7.71  cover mean=0.151 min=0.036
+     m=3: E_m/X^m mean=27.76 max=132.46  cover mean=0.710 min=0.138
+  X=30: omega-pairs in [1,X]: 0; mean f=30.4; mean (f-X)^2/X=0.96 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.53 max=9.02  cover mean=0.210 min=0.054
+     m=3: E_m/X^m mean=36.16 max=216.22  cover mean=0.860 min=0.207
+  X=45: omega-pairs in [1,X]: 2; mean f=45.6; mean (f-X)^2/X=1.02 (Lemma F: <=13)
+     m=2: E_m/X^m mean=4.13 max=10.34  cover mean=0.408 min=0.128
+     m=3: E_m/X^m mean=79.53 max=480.33  cover mean=0.992 min=0.608
+  X=60: omega-pairs in [1,X]: 4; mean f=60.9; mean (f-X)^2/X=1.05 (Lemma F: <=13)
+     m=2: E_m/X^m mean=4.97 max=11.92  cover mean=0.603 min=0.302
+     m=3: E_m/X^m mean=160.50 max=826.77  cover mean=1.000 min=0.985
+p=1033 A=0 B=3 n=1029 cyclic  omega=[195, 837] sqrt(p/3)=18.6 sqrt(p)=32.1
+  X=10: omega-pairs in [1,X]: 0; mean f=9.6; mean (f-X)^2/X=0.91 (Lemma F: <=13)
+     m=2: E_m/X^m mean=2.85 max=10.38  cover mean=0.049 min=0.003
+     m=3: E_m/X^m mean=15.17 max=106.80  cover mean=0.172 min=0.004
+  X=18: omega-pairs in [1,X]: 0; mean f=17.5; mean (f-X)^2/X=0.94 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.08 max=8.19  cover mean=0.146 min=0.032
+     m=3: E_m/X^m mean=21.87 max=119.84  cover mean=0.579 min=0.093
+  X=25: omega-pairs in [1,X]: 2; mean f=24.4; mean (f-X)^2/X=0.93 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.38 max=9.36  cover mean=0.261 min=0.083
+     m=3: E_m/X^m mean=34.41 max=225.82  cover mean=0.855 min=0.294
+  X=32: omega-pairs in [1,X]: 2; mean f=31.3; mean (f-X)^2/X=0.84 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.74 max=8.69  cover mean=0.389 min=0.147
+     m=3: E_m/X^m mean=52.35 max=249.88  cover mean=0.971 min=0.623
+  X=45: omega-pairs in [1,X]: 4; mean f=44.2; mean (f-X)^2/X=0.82 (Lemma F: <=13)
+     m=2: E_m/X^m mean=4.67 max=9.88  cover mean=0.622 min=0.326
+     m=3: E_m/X^m mean=114.09 max=431.34  cover mean=1.000 min=0.977
+p=4003 A=0 B=2 n=4111 cyclic  omega=[822, 3180] sqrt(p/3)=36.5 sqrt(p)=63.3
+  X=15: omega-pairs in [1,X]: 0; mean f=15.4; mean (f-X)^2/X=1.06 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.22 max=9.45  cover mean=0.031 min=0.002
+     m=3: E_m/X^m mean=18.09 max=97.85  cover mean=0.161 min=0.004
+  X=25: omega-pairs in [1,X]: 0; mean f=25.7; mean (f-X)^2/X=1.15 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.35 max=9.42  cover mean=0.080 min=0.008
+     m=3: E_m/X^m mean=23.74 max=152.83  cover mean=0.503 min=0.023
+  X=36: omega-pairs in [1,X]: 0; mean f=37.0; mean (f-X)^2/X=1.14 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.52 max=10.25  cover mean=0.158 min=0.031
+     m=3: E_m/X^m mean=35.34 max=303.30  cover mean=0.835 min=0.157
+  X=63: omega-pairs in [1,X]: 2; mean f=64.7; mean (f-X)^2/X=1.13 (Lemma F: <=13)
+     m=2: E_m/X^m mean=4.25 max=9.46  cover mean=0.404 min=0.181
+     m=3: E_m/X^m mean=105.14 max=493.71  cover mean=0.999 min=0.930
+  X=90: omega-pairs in [1,X]: 4; mean f=92.4; mean (f-X)^2/X=1.13 (Lemma F: <=13)
+     m=2: E_m/X^m mean=5.36 max=11.76  cover mean=0.650 min=0.342
+     m=3: E_m/X^m mean=259.91 max=1132.99  cover mean=1.000 min=1.000
+p=2003 A=0 B=7 n=2004 cyclic  omega=[] sqrt(p/3)=25.8 sqrt(p)=44.8
+  X=12: omega-pairs in [1,X]: 0; mean f=12.0; mean (f-X)^2/X=0.95 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.06 max=11.56  cover mean=0.039 min=0.001
+     m=3: E_m/X^m mean=16.64 max=135.56  cover mean=0.163 min=0.002
+  X=25: omega-pairs in [1,X]: 0; mean f=25.0; mean (f-X)^2/X=0.97 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.31 max=9.56  cover mean=0.150 min=0.016
+     m=3: E_m/X^m mean=27.36 max=192.95  cover mean=0.704 min=0.048
+  X=44: omega-pairs in [1,X]: 0; mean f=44.0; mean (f-X)^2/X=0.98 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.97 max=10.44  cover mean=0.390 min=0.118
+     m=3: E_m/X^m mean=71.72 max=444.92  cover mean=0.991 min=0.611
+  X=60: omega-pairs in [1,X]: 0; mean f=60.0; mean (f-X)^2/X=0.98 (Lemma F: <=13)
+     m=2: E_m/X^m mean=4.80 max=11.83  cover mean=0.599 min=0.283
+     m=3: E_m/X^m mean=149.37 max=742.09  cover mean=1.000 min=0.976
+p=3011 A=0 B=7 n=3012 cyclic  omega=[] sqrt(p/3)=31.7 sqrt(p)=54.9
+  X=14: omega-pairs in [1,X]: 0; mean f=14.0; mean (f-X)^2/X=1.05 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.08 max=9.67  cover mean=0.035 min=0.001
+     m=3: E_m/X^m mean=17.10 max=108.78  cover mean=0.168 min=0.001
+  X=31: omega-pairs in [1,X]: 0; mean f=31.0; mean (f-X)^2/X=0.99 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.32 max=9.52  cover mean=0.152 min=0.024
+     m=3: E_m/X^m mean=29.62 max=227.57  cover mean=0.776 min=0.101
+  X=54: omega-pairs in [1,X]: 0; mean f=54.0; mean (f-X)^2/X=0.97 (Lemma F: <=13)
+     m=2: E_m/X^m mean=3.96 max=8.79  cover mean=0.390 min=0.160
+     m=3: E_m/X^m mean=81.35 max=381.96  cover mean=0.997 min=0.863
+  X=80: omega-pairs in [1,X]: 0; mean f=80.0; mean (f-X)^2/X=0.99 (Lemma F: <=13)
+     m=2: E_m/X^m mean=5.13 max=12.72  cover mean=0.659 min=0.329
+     m=3: E_m/X^m mean=216.60 max=1179.87  cover mean=1.000 min=1.000
+p=2011 A=1 B=3 n=2064: not cyclic, skipped

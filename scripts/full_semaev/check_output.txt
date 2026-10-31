@@ -1,0 +1,105 @@
+== PART 1: exhaustive soundness, m = 2, all non-q variables free (x0,x1 < B; y0,y1,w,lam in [0,p)); R forced by xsum/ysum ==
+  p=7 a=0 b=1 B=3 |FB|=6: accepted (tuple,R) pairs=36, direct pairs=36, by word {'A': 24, 'D': 6, 'C': 6}, each pair accepted by exactly its own word: True
+  p=11 a=0 b=4 B=4 |FB|=8: accepted (tuple,R) pairs=64, direct pairs=64, by word {'A': 48, 'D': 8, 'C': 8}, each pair accepted by exactly its own word: True
+  p=13 a=0 b=9 B=4 |FB|=8: accepted (tuple,R) pairs=64, direct pairs=64, by word {'A': 48, 'D': 8, 'C': 8}, each pair accepted by exactly its own word: True
+  p=17 a=0 b=8 B=5 |FB|=10: accepted (tuple,R) pairs=100, direct pairs=100, by word {'A': 80, 'D': 10, 'C': 10}, each pair accepted by exactly its own word: True
+== PART 2: full tuples: sum over patterns of network counts == direct enumeration, all R incl. O ==
+  p=5    done (instances so far 9, tuples 160, non-generic tuples 112)  [290s]
+  p=7    done (instances so far 18, tuples 544, non-generic tuples 376)  [290s]
+  p=11   done (instances so far 27, tuples 834, non-generic tuples 552)  [291s]
+  p=13   done (instances so far 36, tuples 916, non-generic tuples 606)  [291s]
+  p=17   done (instances so far 45, tuples 2572, non-generic tuples 1350)  [294s]
+  p=19   done (instances so far 54, tuples 3029, non-generic tuples 1627)  [295s]
+  p=23   done (instances so far 63, tuples 4728, non-generic tuples 2504)  [299s]
+  p=29   done (instances so far 72, tuples 6192, non-generic tuples 3266)  [301s]
+  p=31   done (instances so far 81, tuples 7080, non-generic tuples 3684)  [303s]
+  p=37   done (instances so far 90, tuples 7954, non-generic tuples 4150)  [304s]
+  p=41   done (instances so far 99, tuples 9418, non-generic tuples 4852)  [307s]
+  p=43   done (instances so far 108, tuples 11162, non-generic tuples 5580)  [310s]
+  p=47   done (instances so far 117, tuples 11313, non-generic tuples 5663)  [310s]
+  p=53   done (instances so far 126, tuples 12201, non-generic tuples 6055)  [312s]
+  p=59   done (instances so far 135, tuples 12405, non-generic tuples 6179)  [312s]
+  p=61   done (instances so far 144, tuples 13550, non-generic tuples 6728)  [314s]
+  p=67   done (instances so far 150, tuples 13954, non-generic tuples 6876)  [314s]
+  p=71   done (instances so far 156, tuples 14486, non-generic tuples 7040)  [314s]
+  p=73   done (instances so far 162, tuples 14758, non-generic tuples 7152)  [315s]
+  p=79   done (instances so far 168, tuples 15482, non-generic tuples 7372)  [315s]
+  p=83   done (instances so far 174, tuples 16186, non-generic tuples 7580)  [316s]
+  p=89   done (instances so far 180, tuples 17438, non-generic tuples 7872)  [317s]
+  p=97   done (instances so far 186, tuples 18214, non-generic tuples 8104)  [317s]
+  p=101  done (instances so far 192, tuples 19158, non-generic tuples 8360)  [318s]
+  p=103  done (instances so far 198, tuples 19922, non-generic tuples 8572)  [319s]
+  p=107  done (instances so far 204, tuples 21066, non-generic tuples 8836)  [320s]
+  p=109  done (instances so far 210, tuples 21662, non-generic tuples 9008)  [320s]
+  p=113  done (instances so far 216, tuples 22110, non-generic tuples 9136)  [320s]
+  p=127  done (instances so far 222, tuples 23822, non-generic tuples 9520)  [322s]
+  p=131  done (instances so far 228, tuples 26842, non-generic tuples 10092)  [324s]
+  p=137  done (instances so far 234, tuples 28086, non-generic tuples 10392)  [325s]
+  p=139  done (instances so far 240, tuples 30814, non-generic tuples 10944)  [327s]
+  p=149  done (instances so far 246, tuples 31098, non-generic tuples 11020)  [327s]
+  p=151  done (instances so far 252, tuples 32547, non-generic tuples 11361)  [328s]
+  p=157  done (instances so far 258, tuples 34307, non-generic tuples 11713)  [329s]
+  p=163  done (instances so far 264, tuples 35331, non-generic tuples 11969)  [330s]
+  p=167  done (instances so far 270, tuples 36191, non-generic tuples 12181)  [331s]
+  p=173  done (instances so far 276, tuples 37000, non-generic tuples 12370)  [331s]
+  p=179  done (instances so far 282, tuples 38288, non-generic tuples 12642)  [332s]
+  p=181  done (instances so far 288, tuples 39516, non-generic tuples 12926)  [333s]
+  p=191  done (instances so far 294, tuples 40516, non-generic tuples 13174)  [334s]
+  p=193  done (instances so far 300, tuples 42740, non-generic tuples 13630)  [336s]
+  p=197  done (instances so far 306, tuples 44820, non-generic tuples 14062)  [338s]
+  p=199  done (instances so far 312, tuples 46944, non-generic tuples 14490)  [340s]
+PART 2 totals: instances=312 tuples=46944 non-generic tuples=14490 (each accepted by exactly its own pattern) wrong-R tests=46936; tuples containing a 2-torsion point (y=0)=1516
+tuples by pattern letter-word (all instances): {'A': 11878, 'AA': 17008, 'AAA': 3568, 'AAC': 488, 'AAD': 464, 'AC': 144, 'ACS': 156, 'AD': 144, 'ADA': 128, 'ADC': 20, 'ADD': 8, 'C': 1229, 'CS': 3476, 'CSA': 984, 'CSC': 447, 'CSD': 416, 'D': 1206, 'DA': 3360, 'DAA': 1334, 'DAC': 160, 'DAD': 160, 'DC': 40, 'DCS': 60, 'DD': 32, 'DDA': 22, 'DDC': 6, 'DDD': 6}
+== PART 2b: prefix-restricted counts: pattern-sum == direct, several prefixes ==
+  prefix instances compared: 80  all equal: True
+== PART 3: gate-level (Schoenhage-Strassen) Sim.accept == integer system, on D / C / S patterns ==
+  true decompositions accepted at gate level=66, perturbed/wrong-word witnesses rejected=1794, wrongly accepted=0
+== PART 4: topology sizes (exact U, held bits, largest gate) for every word, vs the all-A baseline and the L33 bound ==
+  L=  16 m=2: baseline(all A) U/(mL)=  495.4 | worst word D      (R=O:False) U/(mL)=  563.6 (x1.138 of baseline) G=10 max-uses=6  U+H over mL=862  wmax/L^(3/4)=84.0
+  L=  16 m=3: baseline(all A) U/(mL)=  612.0 | worst word DD     (R=O:False) U/(mL)=  703.0 (x1.149 of baseline) G=18 max-uses=6  U+H over mL=1076  wmax/L^(3/4)=126.0
+  L=  16 m=4: baseline(all A) U/(mL)=  636.8 | worst word DDD    (R=O:False) U/(mL)=  747.0 (x1.173 of baseline) G=26 max-uses=6  U+H over mL=1143  wmax/L^(3/4)=136.5
+  L=  16 m=5: baseline(all A) U/(mL)=  675.1 | worst word DDDD   (R=O:False) U/(mL)=  792.8 (x1.174 of baseline) G=34 max-uses=6  U+H over mL=1213  wmax/L^(3/4)=136.5
+  L=  16 m=6: baseline(all A) U/(mL)=  700.8 | worst word DDDDD  (R=O:False) U/(mL)=  823.2 (x1.175 of baseline) G=42 max-uses=6  U+H over mL=1260  wmax/L^(3/4)=136.5
+  L=  24 m=2: baseline(all A) U/(mL)=  390.6 | worst word D      (R=O:False) U/(mL)=  443.9 (x1.137 of baseline) G=10 max-uses=6  U+H over mL=681  wmax/L^(3/4)=73.8
+  L=  24 m=3: baseline(all A) U/(mL)=  482.9 | worst word DD     (R=O:False) U/(mL)=  554.0 (x1.147 of baseline) G=18 max-uses=6  U+H over mL=849  wmax/L^(3/4)=110.7
+  L=  24 m=4: baseline(all A) U/(mL)=  502.3 | worst word DDD    (R=O:False) U/(mL)=  588.6 (x1.172 of baseline) G=26 max-uses=6  U+H over mL=902  wmax/L^(3/4)=119.9
+  L=  24 m=5: baseline(all A) U/(mL)=  532.7 | worst word DDDD   (R=O:False) U/(mL)=  624.7 (x1.173 of baseline) G=34 max-uses=6  U+H over mL=958  wmax/L^(3/4)=119.9
+  L=  24 m=6: baseline(all A) U/(mL)=  553.0 | worst word DDDDD  (R=O:False) U/(mL)=  648.8 (x1.173 of baseline) G=42 max-uses=6  U+H over mL=995  wmax/L^(3/4)=119.9
+  L=  40 m=2: baseline(all A) U/(mL)=  529.1 | worst word D      (R=O:False) U/(mL)=  584.9 (x1.105 of baseline) G=10 max-uses=6  U+H over mL=890  wmax/L^(3/4)=56.6
+  L=  40 m=3: baseline(all A) U/(mL)=  621.7 | worst word DD     (R=O:False) U/(mL)=  702.7 (x1.130 of baseline) G=18 max-uses=6  U+H over mL=1070  wmax/L^(3/4)=78.6
+  L=  40 m=4: baseline(all A) U/(mL)=  655.3 | worst word DDD    (R=O:False) U/(mL)=  753.9 (x1.151 of baseline) G=26 max-uses=6  U+H over mL=1148  wmax/L^(3/4)=81.7
+  L=  40 m=5: baseline(all A) U/(mL)=  681.7 | worst word DDDD   (R=O:False) U/(mL)=  786.9 (x1.154 of baseline) G=34 max-uses=6  U+H over mL=1198  wmax/L^(3/4)=81.7
+  L=  40 m=6: baseline(all A) U/(mL)=  705.9 | worst word DDDDD  (R=O:False) U/(mL)=  815.5 (x1.155 of baseline) G=42 max-uses=6  U+H over mL=1242  wmax/L^(3/4)=81.7
+  L=  64 m=2: baseline(all A) U/(mL)=  434.4 | worst word D      (R=O:False) U/(mL)=  479.6 (x1.104 of baseline) G=10 max-uses=6  U+H over mL=732  wmax/L^(3/4)=52.5
+  L=  64 m=3: baseline(all A) U/(mL)=  510.7 | worst word DD     (R=O:False) U/(mL)=  576.4 (x1.129 of baseline) G=18 max-uses=6  U+H over mL=880  wmax/L^(3/4)=72.9
+  L=  64 m=4: baseline(all A) U/(mL)=  538.4 | worst word DDD    (R=O:False) U/(mL)=  618.5 (x1.149 of baseline) G=26 max-uses=6  U+H over mL=944  wmax/L^(3/4)=75.8
+  L=  64 m=5: baseline(all A) U/(mL)=  560.1 | worst word DDDD   (R=O:False) U/(mL)=  645.6 (x1.153 of baseline) G=34 max-uses=6  U+H over mL=985  wmax/L^(3/4)=75.8
+  L=  64 m=6: baseline(all A) U/(mL)=  580.1 | worst word DDDDD  (R=O:False) U/(mL)=  669.2 (x1.154 of baseline) G=42 max-uses=6  U+H over mL=1022  wmax/L^(3/4)=75.8
+  L= 128 m=2: baseline(all A) U/(mL)=  319.2 | worst word D      (R=O:False) U/(mL)=  351.7 (x1.102 of baseline) G=10 max-uses=6  U+H over mL=538  wmax/L^(3/4)=46.4
+  L= 128 m=3: baseline(all A) U/(mL)=  375.5 | worst word DD     (R=O:False) U/(mL)=  422.8 (x1.126 of baseline) G=18 max-uses=6  U+H over mL=648  wmax/L^(3/4)=64.4
+  L= 128 m=4: baseline(all A) U/(mL)=  395.8 | worst word DDD    (R=O:False) U/(mL)=  453.7 (x1.146 of baseline) G=26 max-uses=6  U+H over mL=695  wmax/L^(3/4)=67.0
+  L= 128 m=5: baseline(all A) U/(mL)=  418.0 | worst word DDDD   (R=O:False) U/(mL)=  479.7 (x1.148 of baseline) G=34 max-uses=6  U+H over mL=735  wmax/L^(3/4)=67.0
+  L= 128 m=6: baseline(all A) U/(mL)=  426.6 | worst word DDDDD  (R=O:False) U/(mL)=  491.0 (x1.151 of baseline) G=42 max-uses=6  U+H over mL=752  wmax/L^(3/4)=67.0
+  L= 256 m=2: baseline(all A) U/(mL)=  320.3 | worst word D      (R=O:False) U/(mL)=  353.0 (x1.102 of baseline) G=10 max-uses=6  U+H over mL=540  wmax/L^(3/4)=55.1
+  L= 256 m=3: baseline(all A) U/(mL)=  376.7 | worst word DD     (R=O:False) U/(mL)=  424.5 (x1.127 of baseline) G=18 max-uses=6  U+H over mL=649  wmax/L^(3/4)=76.6
+  L= 256 m=4: baseline(all A) U/(mL)=  397.2 | worst word DDD    (R=O:False) U/(mL)=  455.5 (x1.147 of baseline) G=26 max-uses=6  U+H over mL=697  wmax/L^(3/4)=79.6
+  L= 256 m=5: baseline(all A) U/(mL)=  416.3 | worst word DDDD   (R=O:False) U/(mL)=  478.5 (x1.149 of baseline) G=34 max-uses=6  U+H over mL=732  wmax/L^(3/4)=79.6
+  L= 256 m=6: baseline(all A) U/(mL)=  420.0 | worst word DDDDD  (R=O:False) U/(mL)=  487.4 (x1.160 of baseline) G=42 max-uses=6  U+H over mL=746  wmax/L^(3/4)=79.6
+  L= 512 m=2: baseline(all A) U/(mL)=  262.4 | worst word D      (R=O:False) U/(mL)=  288.7 (x1.100 of baseline) G=10 max-uses=6  U+H over mL=443  wmax/L^(3/4)=54.2
+  L= 512 m=3: baseline(all A) U/(mL)=  308.8 | worst word DD     (R=O:False) U/(mL)=  347.2 (x1.125 of baseline) G=18 max-uses=6  U+H over mL=533  wmax/L^(3/4)=75.3
+  L= 512 m=4: baseline(all A) U/(mL)=  325.5 | worst word DDD    (R=O:False) U/(mL)=  372.6 (x1.145 of baseline) G=26 max-uses=6  U+H over mL=572  wmax/L^(3/4)=78.3
+  L= 512 m=5: baseline(all A) U/(mL)=  341.3 | worst word DDDD   (R=O:False) U/(mL)=  391.5 (x1.147 of baseline) G=34 max-uses=6  U+H over mL=601  wmax/L^(3/4)=78.3
+  L= 512 m=6: baseline(all A) U/(mL)=  344.3 | worst word DDDDD  (R=O:False) U/(mL)=  398.7 (x1.158 of baseline) G=42 max-uses=6  U+H over mL=612  wmax/L^(3/4)=78.3
+  L=1024 m=2: baseline(all A) U/(mL)=  316.7 | worst word D      (R=O:False) U/(mL)=  349.0 (x1.102 of baseline) G=10 max-uses=6  U+H over mL=533  wmax/L^(3/4)=38.6
+  L=1024 m=3: baseline(all A) U/(mL)=  388.5 | worst word DD     (R=O:False) U/(mL)=  431.7 (x1.111 of baseline) G=18 max-uses=6  U+H over mL=659  wmax/L^(3/4)=55.7
+  L=1024 m=4: baseline(all A) U/(mL)=  424.4 | worst word DDD    (R=O:False) U/(mL)=  473.0 (x1.114 of baseline) G=26 max-uses=6  U+H over mL=722  wmax/L^(3/4)=55.7
+  L=1024 m=5: baseline(all A) U/(mL)=  438.2 | worst word DDDD   (R=O:False) U/(mL)=  492.4 (x1.124 of baseline) G=34 max-uses=6  U+H over mL=752  wmax/L^(3/4)=55.7
+  L=1024 m=6: baseline(all A) U/(mL)=  444.7 | worst word DDDDD  (R=O:False) U/(mL)=  503.8 (x1.133 of baseline) G=42 max-uses=6  U+H over mL=770  wmax/L^(3/4)=55.7
+  L=2048 m=2: baseline(all A) U/(mL)=  260.7 | worst word D      (R=O:False) U/(mL)=  286.9 (x1.100 of baseline) G=10 max-uses=6  U+H over mL=440  wmax/L^(3/4)=38.1
+  L=2048 m=3: baseline(all A) U/(mL)=  320.1 | worst word DD     (R=O:False) U/(mL)=  355.0 (x1.109 of baseline) G=18 max-uses=6  U+H over mL=544  wmax/L^(3/4)=55.0
+  L=2048 m=4: baseline(all A) U/(mL)=  349.8 | worst word DDD    (R=O:False) U/(mL)=  389.0 (x1.112 of baseline) G=26 max-uses=6  U+H over mL=596  wmax/L^(3/4)=55.0
+  L=2048 m=5: baseline(all A) U/(mL)=  361.1 | worst word DDDD   (R=O:False) U/(mL)=  405.0 (x1.121 of baseline) G=34 max-uses=6  U+H over mL=621  wmax/L^(3/4)=55.0
+  L=2048 m=6: baseline(all A) U/(mL)=  366.6 | worst word DDDDD  (R=O:False) U/(mL)=  414.3 (x1.130 of baseline) G=42 max-uses=6  U+H over mL=635  wmax/L^(3/4)=55.0
+{'p1': True, 'p2': True, 'p2b': True, 'p3': True, 'p4': True}
+PASS
+done

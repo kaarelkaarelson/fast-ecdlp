@@ -1,0 +1,55 @@
+INSTANCES:
+  cyc_sqfree: p=4787 N=4706={2: 1, 13: 1, 181: 1} G~Z/4706xZ/1
+  cyc_pp: p=1283 N=1215={3: 5, 5: 1} G~Z/1215xZ/1
+  noncyc_pp: p=4937 N=4992={2: 7, 3: 1, 13: 1} G~Z/624xZ/8
+  prime: p=3469 N=3389={3389: 1} G~Z/3389xZ/1
+  noncyc_sqfreeexp: p=4603 N=4548={2: 2, 3: 1, 379: 1} G~Z/2274xZ/2
+
+RECOVERY (category, config): good/total
+  cyc_pp             rref/raw       12/12
+  cyc_pp             zsigma/mix     12/12
+  cyc_pp             zsigma/ph      12/12
+  cyc_sqfree         rref/raw       8/8
+  cyc_sqfree         zsigma/mix     8/8
+  cyc_sqfree         zsigma/ph      8/8
+  noncyc_pp          rref/raw       12/12
+  noncyc_pp          zsigma/mix     12/12
+  noncyc_pp          zsigma/ph      12/12
+  noncyc_sqfreeexp   rref/raw       8/8
+  noncyc_sqfreeexp   zsigma/mix     8/8
+  noncyc_sqfreeexp   zsigma/ph      8/8
+  prime              rref/raw       8/8
+  prime              zsigma/mix     8/8
+  prime              zsigma/ph      8/8
+
+MINIMAL NUMBER s* OF KERNEL VECTORS (prefix of stream) with which Howell recovers d_l
+  field path (v=1), mode zsigma : n=92 none=0 mean=2.91 max=6 hist={1: 6, 2: 13, 3: 62, 4: 7, 5: 2, 6: 2}
+  field path (v=1), mode rref   : n=92 none=0 mean=2.99 max=15 hist={1: 8, 2: 16, 3: 58, 4: 3, 5: 4, 6: 1, 8: 1, 15: 1}
+  prime-power path (v>=2), mode mix  : n=24 none=0 mean=3.71 max=8 hist={2: 6, 3: 8, 4: 4, 5: 2, 6: 2, 7: 1, 8: 1}
+  prime-power path (v>=2), mode raw  : n=24 none=0 mean=3.00 max=8 hist={2: 10, 3: 10, 4: 1, 5: 2, 8: 1}
+
+RANK DEFECT d0 = f - rank_l(E) of the relation matrix (raw, N_r = f+12 rows), by (cat,l,v):
+  ('cyc_pp', 3, 5): mean d0/f = 0.068  (n=24)
+  ('cyc_pp', 5, 1): mean d0/f = 0.068  (n=24)
+  ('cyc_sqfree', 2, 1): mean d0/f = 0.119  (n=16)
+  ('cyc_sqfree', 13, 1): mean d0/f = 0.104  (n=16)
+  ('cyc_sqfree', 181, 1): mean d0/f = 0.104  (n=16)
+  ('noncyc_pp', 2, 3): mean d0/f = 0.160  (n=2)
+  ('noncyc_pp', 2, 4): mean d0/f = 0.144  (n=22)
+  ('noncyc_pp', 3, 1): mean d0/f = 0.125  (n=24)
+  ('noncyc_pp', 13, 1): mean d0/f = 0.125  (n=24)
+  ('noncyc_sqfreeexp', 2, 1): mean d0/f = 0.131  (n=16)
+  ('noncyc_sqfreeexp', 3, 1): mean d0/f = 0.111  (n=16)
+  ('noncyc_sqfreeexp', 379, 1): mean d0/f = 0.111  (n=16)
+  ('prime', 3389, 1): mean d0/f = 0.116  (n=16)
+
+SCHUR LEVEL TRACE (first 6 prime-power runs): (depth, n, c, r, defect)
+   ('cyc_pp', 3, 5, [(0, 46, 34, 32, 2), (1, 14, 2, 0, 2), (2, 14, 2, 0, 2), (3, 14, 2, 0, 2), (4, 14, 2, 0, 2), (5, 14, 2, 0, 2)])
+   ('cyc_pp', 3, 5, [(0, 42, 30, 28, 2), (1, 14, 2, 0, 2), (2, 14, 2, 0, 2), (3, 14, 2, 0, 2), (4, 14, 2, 0, 2), (5, 14, 2, 0, 2)])
+   ('cyc_pp', 3, 5, [(0, 48, 36, 32, 4), (1, 16, 4, 0, 4), (2, 16, 4, 0, 4), (3, 16, 4, 0, 4), (4, 16, 4, 0, 4), (5, 16, 4, 0, 4)])
+   ('cyc_pp', 3, 5, [(0, 40, 28, 24, 4), (1, 16, 4, 0, 4), (2, 16, 4, 0, 4), (3, 16, 4, 0, 4), (4, 16, 4, 0, 4), (5, 16, 4, 0, 4)])
+   ('cyc_pp', 3, 5, [(0, 44, 32, 28, 4), (1, 16, 4, 0, 4), (2, 16, 4, 0, 4), (3, 16, 4, 0, 4), (4, 16, 4, 0, 4), (5, 16, 4, 0, 4)])
+   ('cyc_pp', 3, 5, [(0, 46, 34, 31, 3), (1, 15, 3, 0, 3), (2, 15, 3, 0, 3), (3, 15, 3, 0, 3), (4, 15, 3, 0, 3), (5, 15, 3, 0, 3)])
+
+SUMMARY 144 / 144
+PASS toy_l62

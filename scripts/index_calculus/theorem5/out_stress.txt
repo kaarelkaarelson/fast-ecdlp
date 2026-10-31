@@ -1,0 +1,11 @@
+S=<P> case: N=1368 ordP=4 -> ok rounds=1
+S=<P> case: N=2079 ordP=3 -> ok rounds=3
+S=<P> case: N=9852 ordP=3 -> ok rounds=1
+S=<P> case: N=2276 ordP=2 -> ok rounds=5
+S=<P> case: N=640 ordP=2 -> ok rounds=5
+S=<P> case: N=3072 ordP=3 -> ok rounds=1
+S=<P> case: N=5925 ordP=3 -> ok rounds=1
+S=<P> case: N=4655 ordP=35 -> ok rounds=1
+S=<P> case: N=2940 ordP=7 -> ok rounds=1
+S=<P> case: N=4196 ordP=2 -> ok rounds=5
+stress(1): ok=10 none=0 WRONG=0
