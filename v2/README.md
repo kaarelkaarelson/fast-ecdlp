@@ -4,7 +4,7 @@ Version 2 of the paper adds two things to this repository: the paper itself, and
 
 ## Paper
 
-**[paper.pdf](paper.pdf)**: *A Fast Algorithm for Elliptic-Curve Discrete Logarithms*, version 2, November 1, 2026. The section "Changes from version 1" in the introduction lists what changed.
+**[paper.pdf](paper.pdf)**: *A Fast Algorithm for Elliptic-Curve Discrete Logarithms*, version 2, November 1, 2026 (updated the same day with the faster base case, the progress figure and the open-problems section). The section "Changes from version 1" in the introduction lists what changed.
 
 ## Lean modules
 
@@ -17,10 +17,13 @@ Version 2 of the paper adds two things to this repository: the paper itself, and
 | Relation rows for an adaptive oracle; Chernoff cap | `algSpec_row_rel`, `cap_bound` | `L116_Alg`, `L116_Chernoff`, `L119_WAlg` |
 | Random elements generate any finite abelian group (Lemma gen) | `ECDLP.L119.gen_log_explicit` | `L119_Gen` |
 | n ≤ (1 + log<sub>2</sub> n) φ(n) | `ECDLP.L118.totient_ge` | `L118_Tot` |
+| Crossover arithmetic: block clustering, and the faster base case e<sub>0</sub> = 1/4 (paper, Section "Limitations") | `L149.G1_arith_paper`, `L149.E0Q_arith_free`, `L149.E0Q_arith_paper` | `L149_Sched`, `L173_E0Quarter` |
 
 The counting statement to audit is `ECDLP109.countingRate` in [`lean/ECDLPv2/L109_CountChallenge.lean`](lean/ECDLPv2/L109_CountChallenge.lean). It imports only Mathlib and is left as `sorry` on purpose, like `Challenge.lean` in version 1. `Verify.lean` ties `countingRate_all` to that statement with an `example`, so the proof does not use the `sorry`.
 
 The index-calculus theorems carry the analytic inputs as named hypotheses: the coverage bound, the group order and its factorization, and the cost of the sparse linear algebra (paper, Section "Formal verification").
+
+The crossover theorems check arithmetic only: every level condition of an explicit schedule and the final inequality, with a Boolean checker over the rationals, a soundness proof and kernel evaluation. They do not formalize the engine theorem, assumption (R1) of the free schedule, or the base-case lemma (a paper proof). The schedules come from `scripts/schedules/gen_L149.py` and `gen_L173.py`. The best proven crossover is now log<sub>2</sub> log<sub>2</sub> p ≥ 6.292·10<sup>7</sup> (4.372·10<sup>7</sup> with the free schedule), about a billion times earlier than version 1; it is still far from any real key size.
 
 ## Check the proofs
 

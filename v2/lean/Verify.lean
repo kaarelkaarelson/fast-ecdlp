@@ -11,6 +11,8 @@ import ECDLPv2.L118_Tot
 import ECDLPv2.L119_Gen
 import ECDLPv2.L119_WAlg
 import ECDLPv2.L119_WMain
+import ECDLPv2.L149_Sched
+import ECDLPv2.L173_E0Quarter
 
 /-! Axiom check for the theorems added in version 2 of the paper.
 Expected output for each line: `[propext, Classical.choice, Quot.sound]`. -/
@@ -38,3 +40,9 @@ example : ∀ m : ℕ, type_of% (ECDLP109.countingRate m) := ECDLP.L132.counting
 #print axioms ECDLP.L119.gen_log_explicit
 #print axioms ECDLP.L116.gen_two_explicit
 #print axioms ECDLP.L118.totient_ge
+
+-- Crossover arithmetic of the engine schedules (Section "Where the guarantee starts to win"): G1 (e0 = 1/2) and the
+-- faster base case (e0 = 1/4 + 1/(2 K0)). Arithmetic only; see the module headers for what is assumed.
+#print axioms L149.G1_arith_paper
+#print axioms L149.E0Q_arith_free
+#print axioms L149.E0Q_arith_paper
