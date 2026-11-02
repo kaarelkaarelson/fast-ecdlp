@@ -1,0 +1,17 @@
+# Lean modules added in version 2 of the paper. They build on the version 1 project in ../../lean.
+#   ECDLPv2/* -- the new modules (counting theorem, index-calculus reduction, generation and Chernoff bounds).
+#   Verify   -- #print axioms for the version 2 theorems named in the paper.
+name = "ECDLPv2"
+defaultTargets = ["ECDLPv2", "Verify"]
+packagesDir = "../../lean/.lake/packages"
+
+[[require]]
+name = "ECDLP"
+path = "../../lean"
+
+[[lean_lib]]
+name = "ECDLPv2"
+globs = ["ECDLPv2.+"]
+
+[[lean_lib]]
+name = "Verify"
