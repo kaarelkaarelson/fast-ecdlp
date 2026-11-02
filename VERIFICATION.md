@@ -90,10 +90,9 @@ Challenge.lean:86:8: warning: declaration uses `sorry`
 
 Every theorem reports only `propext`, `Classical.choice` and `Quot.sound`: no `sorryAx`, no new axiom.
 
-## Not run
+## Continuous integration
 
-- [Comparator](https://github.com/leanprover/comparator) with `lean/comparator.json` was not run (not installed on this machine). What was checked instead: the definitions in `Challenge.lean` and `ECDLP/L35_Challenge.lean` are textually identical (`diff` of the `namespace ECDLP` blocks up to `encOut`), and the theorem in `Solution.lean` has the Challenge's statement verbatim.
-- No independent kernel re-check (`lean4checker`, nanoda) was run.
+The GitHub Actions workflow `.github/workflows/lean.yml` rebuilt the project from scratch and passed (run 41243751810): `lake build` with no `sorry` outside `Challenge.lean`, the axiom check in `Verify.lean`, and [Comparator](https://github.com/leanprover/comparator) with `lean/comparator.json`, which checks that `Solution.lean` proves exactly the statement in `Challenge.lean`, using only the three standard axioms, and re-checks the proof with a second kernel (nanoda).
 
 ## Changes from the paper's development
 
