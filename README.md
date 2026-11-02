@@ -12,6 +12,8 @@ The research, proofs and formalization were produced with Claude Opus 5.5 in a c
 
 **[paper.pdf](paper.pdf)**: *A Fast Algorithm for Elliptic-Curve Discrete Logarithms*, Kaarel Kaarelson, 2026. IACR Cryptology ePrint Archive, link to appear.
 
+**Version 2: [v2/paper.pdf](v2/paper.pdf)**, with its new Lean modules and scripts in [v2/](v2/). It adds the counting theorem and the index-calculus reduction in Lean, a faster base case for the engine (best crossover log<sub>2</sub> log<sub>2</sub> p ≥ 6.292·10<sup>7</sup>, about a billion times earlier than version 1), and the routes we tested towards a practical algorithm. See [v2/README.md](v2/README.md).
+
 ## Lean proof
 
 **1. Read the statement.** [`lean/Challenge.lean`](lean/Challenge.lean) (91 lines, imports only Mathlib) states the theorem `ECDLP.subexponentialRate m`:
